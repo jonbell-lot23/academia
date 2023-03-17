@@ -5,7 +5,11 @@ import { PrismaClient, academia } from "@prisma/client";
 import styles from "../styles/blog.module.css";
 
 interface Props {
-  posts: academia[];
+  posts: academiaWithDate[];
+}
+
+interface academiaWithDate extends academia {
+  created_at: Date;
 }
 
 const prisma = new PrismaClient();
@@ -39,17 +43,17 @@ const Home: NextPage<Props> = ({ posts }) => {
                 key={post.id}
                 className="bg-white rounded-lg shadow-md p-4 transition-all duration-300 hover:shadow-lg"
               >
-                <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
+                <h2 className="text-xl font-bold mb-2">{post.title}</h2>
                 <div className="text-gray-600 mb-4">
                   {post.created_at ? (
-                    <time dateTime={post.created_at.toISOString()}>
+                    <time dateTime={post.created_at}>
                       {new Date(post.created_at).toLocaleDateString()}
                     </time>
                   ) : (
                     ""
                   )}
                 </div>
-                <p className="text-lg text-gray-700">{post.body}</p>
+                <p className="text-gray-700">{post.body}</p>
               </div>
             ))}
           </div>
@@ -70,7 +74,7 @@ export async function getStaticProps() {
         id: post.id,
         title: post.title,
         body: post.body,
-        created_at: post.created_at ? post.created_at.toISOString() : null, // convert Date to ISO string
+        created_at: new Date(post.created_at), // convert Date string to Date object
       })),
     },
   };
