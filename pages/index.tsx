@@ -47,7 +47,7 @@ const Home: NextPage<Props> = ({ posts }) => {
                     ""
                   )}
                 </div>
-                <p className="text-gray-800">{post.body}</p>
+                <p className="text-gray-700">{post.body}</p>
               </div>
             ))}
           </div>
