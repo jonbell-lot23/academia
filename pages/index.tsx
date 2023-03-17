@@ -74,7 +74,7 @@ export async function getStaticProps() {
         id: post.id,
         title: post.title,
         body: post.body,
-        created_at: new Date(post.created_at).toISOString(), // convert Date string to Date object
+        created_at: new Date(post.created_at), // convert Date string to Date object
       })),
     },
   };
