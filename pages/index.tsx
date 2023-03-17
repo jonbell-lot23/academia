@@ -9,13 +9,13 @@ interface Props {
 }
 
 interface academiaWithDate extends academia {
-  created_at: Date;
+  created_at: string;
 }
 
 const prisma = new PrismaClient();
 
 const Home: NextPage<Props> = ({ posts }) => {
-  const [sortedPosts, setSortedPosts] = useState<academia[]>([]);
+  const [sortedPosts, setSortedPosts] = useState<academiaWithDate[]>([]);
 
   useEffect(() => {
     setSortedPosts(
@@ -74,7 +74,7 @@ export async function getStaticProps() {
         id: post.id,
         title: post.title,
         body: post.body,
-        created_at: new Date(post.created_at), // convert Date string to Date object
+        created_at: new Date(post.created_at).toISOString(), // convert Date string to Date object
       })),
     },
   };
