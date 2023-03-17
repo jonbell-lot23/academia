@@ -28,26 +28,28 @@ const Home: NextPage<Props> = ({ posts }) => {
         <title>My Academic Journal</title>
         <meta name="description" content="My Academic Journal" />
       </Head>
-      <div className="bg-gray-100 min-h-screen">
-        <div className="max-w-2xl mx-auto px-4 py-8">
-          <h1 className="text-3xl font-bold mb-8">My Academic Journal</h1>
+      <div className="min-h-screen bg-gray-100">
+        <div className="max-w-4xl mx-auto px-4 py-8">
+          <h1 className="text-4xl font-bold mb-8 text-center">
+            My Academic Journal
+          </h1>
           <div className="grid gap-4 md:grid-cols-2">
             {sortedPosts.map((post) => (
               <div
                 key={post.id}
                 className="bg-white rounded-lg shadow-md p-4 transition-all duration-300 hover:shadow-lg"
               >
-                <h2 className="text-xl font-bold mb-2">{post.title}</h2>
+                <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
                 <div className="text-gray-600 mb-4">
                   {post.created_at ? (
-                    <time dateTime={post.created_at}>
+                    <time dateTime={post.created_at.toISOString()}>
                       {new Date(post.created_at).toLocaleDateString()}
                     </time>
                   ) : (
                     ""
                   )}
                 </div>
-                <p className="text-gray-700">{post.body}</p>
+                <p className="text-lg text-gray-700">{post.body}</p>
               </div>
             ))}
           </div>
