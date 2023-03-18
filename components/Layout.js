@@ -12,7 +12,9 @@ const components = {
 export default function Layout({ children }) {
   return (
     <MDXProvider components={components}>
-      <div>{children}</div>
+      <div className="container mx-auto px-4 py-8 lg:px-8 max-w-screen-md">
+        <div className="prose mx-auto">{children}</div>
+      </div>
     </MDXProvider>
   );
 }

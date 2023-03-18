@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { PrismaClient } from "@prisma/client";
 import Layout from "../../components/Layout";
+import ReactMarkdown from "react-markdown";
 
 const prisma = new PrismaClient();
 
@@ -14,7 +15,7 @@ export default function Post({ post }) {
   return (
     <Layout>
       <h1>{post.title}</h1>
-      <div>{post.body}</div>
+      <ReactMarkdown>{post.body}</ReactMarkdown>
       <div>
         Posted on {new Date(post.created_at).toLocaleDateString("en-NZ")}
       </div>
