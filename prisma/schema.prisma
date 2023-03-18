@@ -8,11 +8,11 @@ datasource db {
 }
 
 model bouquet2023 {
-  date        String?
+  date        DateTime? @db.Timestamptz(6)
   description String?
   url         String?
   username    String?
-  id          Int     @id @default(autoincrement())
+  id          Int       @id @default(autoincrement())
   emoji       String?
 }
 
