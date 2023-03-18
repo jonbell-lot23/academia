@@ -4,6 +4,7 @@ import Head from "next/head";
 import { PrismaClient, academia } from "@prisma/client";
 import styles from "../styles/blog.module.css";
 import ReactMarkdown from "react-markdown";
+import Image from "next/image";
 
 interface Props {
   posts: academiaWithDate[];
@@ -48,7 +49,12 @@ const Home: NextPage<Props> = ({ posts }) => {
       <div className="min-h-screen max-w-screen-md mx-auto">
         <div className="mx-auto px-4 py-8">
           <h1 className="text-4xl font-bold mb-8 text-center">
-            <img src="/academia_masthead.png" />
+            <Image
+              src="/academia_masthead.png"
+              alt="Academia Masthead Image"
+              width={1200}
+              height={200}
+            />
           </h1>
           <div className="grid gap-4 mx-auto prose">
             {sortedPosts.map((post) => (
