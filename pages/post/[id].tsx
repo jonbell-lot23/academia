@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { PrismaClient } from "@prisma/client";
+import Layout from "../../components/Layout.mdx";
 
 const prisma = new PrismaClient();
 
@@ -11,15 +12,13 @@ export default function Post({ post }) {
   }
 
   return (
-    <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-      <h1 className="text-3xl font-extrabold text-gray-900">{post.title}</h1>
-      <div className="mt-6 prose prose-lg text-gray-500">
-        <div dangerouslySetInnerHTML={{ __html: post.body }}></div>
+    <Layout>
+      <h1>{post.title}</h1>
+      {post.body}
+      <div>
+        Posted on {new Date(post.created_at).toLocaleDateString("en-NZ")}
       </div>
-      <div className="mt-6 text-sm text-gray-500">
-        <p>Posted on {new Date(post.created_at).toLocaleDateString("en-NZ")}</p>
-      </div>
-    </div>
+    </Layout>
   );
 }
 

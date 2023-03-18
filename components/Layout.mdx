@@ -1,0 +1,10 @@
+import { MDXProvider } from "@mdx-js/react";
+import Link from "next/link";
+
+export default function Layout({ children }) {
+  return (
+    <MDXProvider>
+      <div>!!!{children}</div>
+    </MDXProvider>
+  );
+}

@@ -25,7 +25,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   items.forEach((item) => {
     feed.item({
       title: item.title,
-      url: `${protocol}://${host}/posts/${item.id}`,
+      url: `${protocol}://${host}/post/${item.id}`,
       description: item.body,
       date: item.created_at,
     });
