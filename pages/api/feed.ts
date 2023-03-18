@@ -23,11 +23,19 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   });
 
   items.forEach((item) => {
+    const bodyWithBreaks = item.body.replace(/\n/g, "<br />");
     feed.item({
       title: item.title,
       url: `${protocol}://${host}/post/${item.id}`,
-      description: item.body,
+      description: "",
       date: item.created_at,
+      custom_elements: [
+        {
+          "content:encoded": {
+            _cdata: bodyWithBreaks,
+          },
+        },
+      ],
     });
   });
 
