@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { PrismaClient } from "@prisma/client";
-import Layout from "../../components/Layout.mdx";
+import Layout from "../../components/Layout";
 
 const prisma = new PrismaClient();
 
@@ -14,7 +14,7 @@ export default function Post({ post }) {
   return (
     <Layout>
       <h1>{post.title}</h1>
-      {post.body}
+      <div>{post.body}</div>
       <div>
         Posted on {new Date(post.created_at).toLocaleDateString("en-NZ")}
       </div>
