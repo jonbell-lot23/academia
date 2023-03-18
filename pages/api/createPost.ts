@@ -14,12 +14,9 @@ export default async function createPost(
       return res.status(400).json({ message: "Title and body are required" });
     }
 
-    // Replace line breaks with \n character
-    const formattedBody = body.replace(/\r?\n/g, "\\n");
-
     try {
       const post = await prisma.academia.create({
-        data: { title, body: formattedBody },
+        data: { title, body },
       });
       res.status(200).json(post);
     } catch (error) {

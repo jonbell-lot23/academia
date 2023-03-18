@@ -15,16 +15,28 @@ interface academiaWithDate extends academia {
 
 const prisma = new PrismaClient();
 
+export async function getStaticProps() {
+  const posts = await prisma.academia.findMany({
+    orderBy: { id: "asc" },
+  });
+
+  return {
+    props: {
+      posts: posts.map((post) => ({
+        id: post.id,
+        title: post.title,
+        body: post.body,
+        created_at: new Date(post.created_at).toISOString(),
+      })),
+    },
+  };
+}
+
 const Home: NextPage<Props> = ({ posts }) => {
   const [sortedPosts, setSortedPosts] = useState<academia[]>([]);
 
   useEffect(() => {
-    setSortedPosts(
-      posts.sort(
-        (a, b) =>
-          new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
-      )
-    );
+    setSortedPosts(posts);
   }, [posts]);
 
   return (
@@ -36,7 +48,7 @@ const Home: NextPage<Props> = ({ posts }) => {
       <div className="min-h-screen max-w-screen-md mx-auto">
         <div className="mx-auto px-4 py-8">
           <h1 className="text-4xl font-bold mb-8 text-center">
-            Jon's Adventures in Academia
+            <img src="/academia_masthead.png" />
           </h1>
           <div className="grid gap-4 mx-auto prose">
             {sortedPosts.map((post) => (
@@ -61,22 +73,5 @@ const Home: NextPage<Props> = ({ posts }) => {
     </>
   );
 };
-
-export async function getStaticProps() {
-  const posts = await prisma.academia.findMany({
-    orderBy: { created_at: "desc" },
-  });
-
-  return {
-    props: {
-      posts: posts.map((post) => ({
-        id: post.id,
-        title: post.title,
-        body: post.body,
-        created_at: new Date(post.created_at).toISOString(),
-      })),
-    },
-  };
-}
 
 export default Home;
