@@ -62,15 +62,15 @@ export default function Home(): React.ReactNode {
         <title>My academic journal</title>
         <meta name="description" content="My academic journal" />
       </Head>
-      <div className="bg-gray-100 min-h-screen">
-        <div className="max-w-4xl mx-auto px-4 py-8">
-          <h1 className="text-4xl font-bold text-gray-800 mb-12">
+      <div className="min-h-screen bg-gray-100">
+        <div className="max-w-4xl px-4 py-8 mx-auto">
+          <h1 className="mb-12 text-4xl font-bold text-gray-800">
             My Academic Journal
           </h1>
           <form onSubmit={handleSubmit} className="mb-12">
             <div className="mb-8">
               <label
-                className="block text-gray-700 font-bold mb-2"
+                className="block mb-2 font-bold text-gray-700"
                 htmlFor="title"
               >
                 Title
@@ -80,12 +80,12 @@ export default function Home(): React.ReactNode {
                 type="text"
                 value={post.title}
                 onChange={handleTitleChange}
-                className="w-full py-4 px-6 rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-xl"
+                className="w-full px-6 py-4 text-xl border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
               />
             </div>
             <div className="mb-12">
               <label
-                className="block text-gray-700 font-bold mb-2"
+                className="block mb-2 font-bold text-gray-700"
                 htmlFor="body"
               >
                 Body
@@ -94,12 +94,13 @@ export default function Home(): React.ReactNode {
                 id="body"
                 value={post.body}
                 onChange={handleBodyChange}
-                className="w-full py-4 px-6 rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-lg"
+                style={{ height: "200px", resize: "both" }}
+                className="w-full px-6 py-4 text-lg border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
               />
             </div>
             <button
               type="submit"
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 text-xl"
+              className="px-8 py-4 text-xl text-white bg-blue-600 rounded-lg hover:bg-blue-700"
             >
               Submit
             </button>
@@ -108,12 +109,12 @@ export default function Home(): React.ReactNode {
             {posts.map((post) => (
               <div
                 key={post.id}
-                className="bg-white rounded-lg shadow-md p-8 space-y-4"
+                className="p-8 space-y-4 bg-white rounded-lg shadow-md"
               >
-                <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                <h2 className="mb-4 text-3xl font-bold text-gray-800">
                   {post.title}
                 </h2>
-                <div className="text-gray-800 text-lg leading-relaxed">
+                <div className="text-lg leading-relaxed text-gray-800">
                   {post.body}
                 </div>
               </div>
