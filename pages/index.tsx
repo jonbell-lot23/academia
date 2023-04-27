@@ -5,6 +5,7 @@ import { PrismaClient, academia } from "@prisma/client";
 import styles from "../styles/blog.module.css";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
+import rehypeRaw from "rehype-raw";
 
 interface Props {
   posts: academiaWithDate[];
@@ -46,9 +47,9 @@ const Home: NextPage<Props> = ({ posts }) => {
         <title>Jon&apos;s Adventures in Academia</title>
         <meta name="description" content="Jon's Adventures in Academia" />
       </Head>
-      <div className="min-h-screen max-w-screen-md mx-auto">
-        <div className="mx-auto px-4 py-8">
-          <h1 className="text-4xl font-bold mb-8 text-center">
+      <div className="max-w-screen-md min-h-screen mx-auto">
+        <div className="px-4 py-8 mx-auto">
+          <h1 className="mb-8 text-4xl font-bold text-center">
             <Image
               src="/academia_masthead.png"
               alt="Academia Masthead Image"
@@ -60,17 +61,19 @@ const Home: NextPage<Props> = ({ posts }) => {
             {sortedPosts.map((post) => (
               <div
                 key={post.id}
-                className="rounded-lg p-4 transition-all duration-300"
+                className="p-4 transition-all duration-300 rounded-lg"
               >
-                <h2 className="text-xl font-bold mb-2">{post.title}</h2>
-                <div className="text-gray-600 mb-4">
+                <h2 className="mb-2 text-xl font-bold">{post.title}</h2>
+                <div className="mb-4 text-gray-600">
                   {post.created_at ? (
                     <div>{new Date(post.created_at).toLocaleDateString()}</div>
                   ) : (
                     ""
                   )}
                 </div>
-                <ReactMarkdown>{post.body}</ReactMarkdown>
+                <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+                  {post.body}
+                </ReactMarkdown>
               </div>
             ))}
           </div>
