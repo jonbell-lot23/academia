@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/blog.module.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 interface Post {
   id: number;
@@ -55,6 +54,69 @@ export default function Home(): React.ReactNode {
     const { value } = e.target;
     setPost((prev) => ({ ...prev, body: value }));
   };
+
+  const handlePaste = async (e: React.ClipboardEvent<HTMLTextAreaElement>) => {
+    const { items } = e.clipboardData;
+
+    for (const item of items) {
+      if (item.type.startsWith("image/")) {
+        e.preventDefault();
+        const file = item.getAsFile();
+        const imageUrl = await uploadImage(file);
+        insertImageMarkdown(imageUrl);
+        break;
+      }
+    }
+  };
+
+  const uploadImage = async (file: File): Promise<string> => {
+    const formData = new FormData();
+    formData.append("image", file);
+
+    try {
+      const res = await fetch("/api/uploadImage", {
+        method: "POST",
+        body: formData, // Do not include headers, fetch will set them automatically for FormData
+      });
+
+      if (res.status !== 200) {
+        throw new Error(await res.text());
+      }
+
+      const { imagePath } = await res.json();
+      return imagePath;
+    } catch (error) {
+      console.error("Image upload failed:", error.message);
+      throw error;
+    }
+  };
+
+
+  const insertImageMarkdown = (imageUrl: string) => {
+    const markdown = `![Uploaded Image](${imageUrl})\n`;
+
+    const textarea = document.getElementById("body") as HTMLTextAreaElement;
+    const startPos = textarea.selectionStart;
+    const endPos = textarea.selectionEnd;
+
+    const newValue =
+      textarea.value.substring(0, startPos) +
+      markdown +
+      textarea.value.substring(endPos);
+
+    setPost((prev) => ({ ...prev, body: newValue }));
+  };
+
+  useEffect(() => {
+    const textarea = document.getElementById("body") as HTMLTextAreaElement;
+    textarea.addEventListener("paste", handlePaste as any); // Cast handlePaste to 'any'
+
+    return () => {
+      textarea.removeEventListener("paste", handlePaste as any); // Cast handlePaste to 'any'
+    };
+  }, []);
+
+
 
   return (
     <>
