@@ -63,7 +63,7 @@ const Home: NextPage<Props> = ({ posts }) => {
                 key={post.id}
                 className="p-4 transition-all duration-300 rounded-lg"
               >
-                <h2 className="mb-2 text-xl font-bold">{post.title}</h2>
+                <h2 className="mb-2 text-3xl font-bold">{post.title}</h2>
                 <div className="mb-4 text-gray-600">
                   {post.created_at ? (
                     <div>{new Date(post.created_at).toLocaleDateString()}</div>

@@ -8,6 +8,7 @@ const Diff: React.FC = () => {
     const fetchFilesAndCompare = async () => {
       const resFiles = await fetch("/weeks.json");
       const { weeks } = await resFiles.json();
+      console.log(weeks);
 
       // If there are less than two weeks, we can't diff
       if (weeks.length < 2) {

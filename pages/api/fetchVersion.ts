@@ -9,7 +9,7 @@ export default async function handler(req, res) {
       path.resolve(`./versions/${filename}.md`),
       "utf8"
     );
-    res.status(200).json({ content });
+    res.status(200).json({ content });  // Send the markdown content as a JSON object
   } catch (error) {
     res
       .status(500)
