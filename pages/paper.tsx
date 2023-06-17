@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import Pattern from "/components/pattern_library/Pattern";
+import Pattern from "../components/pattern_library/Pattern";
 
 const Paper: React.FC = () => {
   const [documentContent, setDocumentContent] = useState("");
