@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import Pattern from "/components/pattern_library/Pattern";
 
 const Paper: React.FC = () => {
   const [documentContent, setDocumentContent] = useState("");
@@ -18,6 +19,11 @@ const Paper: React.FC = () => {
   return (
     <div className="container px-4 mx-auto mt-16 prose">
       <ReactMarkdown>{documentContent}</ReactMarkdown>
+
+      <Pattern name="one" />
+      <Pattern name="two" />
+      <Pattern name="three" />
+      <Pattern name="four" />
     </div>
   );
 };

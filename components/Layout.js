@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const components = {
   a: ({ href, ...props }) => (
-    <Link href={href}>
-      <a {...props} />
-    </Link>
+    (<Link href={href} {...props}>
+
+    </Link>)
   ),
 };
 
