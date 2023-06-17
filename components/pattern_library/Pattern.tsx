@@ -1,11 +1,11 @@
 import React from "react";
 
-interface HelloWorldProps {
+interface PatternProps {
   name: string;
 }
 
-const HelloWorld: React.FC<HelloWorldProps> = ({ name }) => {
+const Pattern: React.FC<PatternProps> = ({ name }) => {
   return <h1>Hello, {name}!</h1>;
 };
 
-export default HelloWorld;
+export default Pattern;
