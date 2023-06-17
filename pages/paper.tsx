@@ -1,56 +1,35 @@
 import React, { useEffect, useState } from "react";
-import { diffLines } from "diff";
+import ReactMarkdown from "react-markdown";
 
-const Diff: React.FC = () => {
-  const [diffResult, setDiffResult] = useState([]);
+const Paper: React.FC = () => {
+  const [documentContent, setDocumentContent] = useState("");
 
   useEffect(() => {
-    const fetchFilesAndCompare = async () => {
-      const resFiles = await fetch("/weeks.json");
+    const fetchLatestDocument = async () => {
+      const resFiles = await fetch("/api/weeks");
       const { weeks } = await resFiles.json();
-      console.log(weeks);
 
-      // If there are less than two weeks, we can't diff
-      if (weeks.length < 2) {
+      // If there are no weeks, we can't fetch a document
+      if (weeks.length === 0) {
         return;
       }
 
       const filename = weeks[weeks.length - 1];
-      const previousFilename = weeks[weeks.length - 2];
 
-      const res1 = await fetch(`/api/fetchVersion?filename=${filename}`);
-      const data1 = await res1.json();
+      const res = await fetch(`/api/fetchVersion?filename=${filename}`);
+      const data = await res.json();
 
-      const res2 = await fetch(
-        `/api/fetchVersion?filename=${previousFilename}`
-      );
-      const data2 = await res2.json();
-
-      const changes = diffLines(data1.content, data2.content);
-      setDiffResult(changes);
+      setDocumentContent(data.content);
     };
 
-    fetchFilesAndCompare();
+    fetchLatestDocument();
   }, []);
 
   return (
     <div className="container px-4 mx-auto mt-16">
-      {diffResult.map((part, index) => (
-        <span
-          key={index}
-          className={
-            part.added
-              ? "text-green-700 whitespace-pre-wrap bg-green-100 px-1"
-              : part.removed
-              ? "text-red-500 whitespace-pre-wrap bg-red-50 px-1 line-through"
-              : "whitespace-pre-wrap"
-          }
-        >
-          {part.value}
-        </span>
-      ))}
+      <ReactMarkdown>{documentContent}</ReactMarkdown>
     </div>
   );
 };
 
-export default Diff;
+export default Paper;
