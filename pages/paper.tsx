@@ -6,17 +6,7 @@ const Paper: React.FC = () => {
 
   useEffect(() => {
     const fetchLatestDocument = async () => {
-      const resFiles = await fetch("/api/weeks");
-      const { weeks } = await resFiles.json();
-
-      // If there are no weeks, we can't fetch a document
-      if (weeks.length === 0) {
-        return;
-      }
-
-      const filename = weeks[weeks.length - 1];
-
-      const res = await fetch(`/api/fetchVersion?filename=${filename}`);
+      const res = await fetch(`/api/fetchVersion`);
       const data = await res.json();
 
       setDocumentContent(data.content);
@@ -26,7 +16,7 @@ const Paper: React.FC = () => {
   }, []);
 
   return (
-    <div className="container px-4 mx-auto mt-16">
+    <div className="container px-4 mx-auto mt-16 prose">
       <ReactMarkdown>{documentContent}</ReactMarkdown>
     </div>
   );
