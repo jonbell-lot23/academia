@@ -17,13 +17,8 @@ const Paper: React.FC = () => {
   }, []);
 
   return (
-    <div className="container hidden px-4 mx-auto mt-16 prose">
+    <div className="container px-4 mx-auto mt-16 prose">
       <ReactMarkdown>{documentContent}</ReactMarkdown>
-
-      <Pattern name="one" />
-      <Pattern name="two" />
-      <Pattern name="three" />
-      <Pattern name="four" />
     </div>
   );
 };
