@@ -4,7 +4,7 @@ import Link from "next/link";
 const Index: React.FC = () => {
   return (
     <div className="container px-4 mx-auto mt-16">
-      <h1 className="mb-4 text-3xl">Jon's adventures in academia</h1>
+      <h1 className="mb-4 text-3xl">Adventures in academia</h1>
       <nav>
         <ul>
           <li>
