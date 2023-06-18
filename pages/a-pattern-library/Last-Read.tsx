@@ -292,7 +292,7 @@ export default function HomePage() {
           dealer didn&#39;t have any units in stock, and said that they
           weren&#39;t for sale yet, but we didn&#39;t give up, and the next
           dealer was willing to sell me one, even though he didn&#39;t have any
-          units in yet either.
+          units in yet either. <a href="https://google.com">Link to Google</a>
         </p>
       </div>
     </div>
