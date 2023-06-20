@@ -10,7 +10,6 @@ const Diff: React.FC = () => {
       const { weeks } = await resFiles.json();
       console.log(weeks);
 
-      // If there are less than two weeks, we can't diff
       if (weeks.length < 2) {
         return;
       }
