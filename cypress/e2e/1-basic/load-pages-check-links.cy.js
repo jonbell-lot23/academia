@@ -1,5 +1,5 @@
 describe("Page and Links Check", () => {
-  const pages = ["/", "/paper", "/diff", "/a-pattern-library/Last-Read"];
+  const pages = ["/", "/paper", "/diff", "/a-pattern-library/last-read"];
 
   pages.forEach((page) => {
     it(`successfully loads ${page} and has no broken links`, () => {
