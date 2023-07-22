@@ -8,8 +8,8 @@ const Index: React.FC = () => {
       <nav>
         <ul>
           <li>
-            <Link href="/journal" className="text-blue-500 hover:underline">
-              Journal
+            <Link href="/paper" className="text-blue-500 hover:underline">
+              In progress paper: Augmented text
             </Link>
           </li>
         </ul>
