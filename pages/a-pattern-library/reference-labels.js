@@ -13,11 +13,11 @@ const PersonlBreadcrumbs = () => {
 
         <p>
           It can be hard to remember what brought you to a tab. Maybe you
-          clicked something that said "houses like these are dangerous" or maybe
-          it said "this artist is coming to Seattle next week," but it's hard to
-          remember. Reference labels are a way to to remember the link you
-          clicked in order to take you to a new page, providing valuable
-          context.
+          clicked something that said &quot;houses like these are
+          dangerous&quot; or maybe it said &quot;this artist is coming to
+          Seattle next week,&quot; but it&apos;s hard to remember. Reference
+          labels are a way to to remember the link you clicked in order to take
+          you to a new page, providing valuable context.
         </p>
       </div>
     </div>

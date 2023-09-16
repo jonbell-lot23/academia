@@ -12,13 +12,13 @@ const LastReadIndicator = () => {
         <h2>Last-read indicator</h2>
 
         <p>
-          Bookmarks have existed for hundreds of years, because it's hard to
-          remember exactly where you left off. But when reading content online,
-          we rarely get any help remembering where we were. It's not
-          technologically difficult to remember your last-read location and
+          Bookmarks have existed for hundreds of years, because it&apos;s hard
+          to remember exactly where you left off. But when reading content
+          online, we rarely get any help remembering where we were. It&apos;s
+          not technologically difficult to remember your last-read location and
           offer it to users. Imagine coming back to a long article, or a blog
           post, and having the text helpfully draw your eye to the last thing
-          you saw. It's a small thing with big impact.
+          you saw. It&apos;s a small thing with big impact.
         </p>
       </div>
     </div>

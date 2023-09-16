@@ -16,8 +16,8 @@ const PersonlBreadcrumbs = () => {
           retrace your steps, you have limited options available. You can look
           in your browser history, but that can be interspersed with other pages
           or be cluttered up with junk. You can rely on visited links, but only
-          if they're colored differently, and even then it doesn't help
-          understand the order of your path.
+          if they&apos;re colored differently, and even then it doesn&apos;t
+          help understand the order of your path.
         </p>
         <p>
           Personal breadcrumbs display the pages you visited, in what order, and
