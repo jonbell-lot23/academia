@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import Pattern from "../components/pattern_library/Pattern";
+import LeftNav from "../components/LeftNav";
 
 const Paper: React.FC = () => {
   const [documentContent, setDocumentContent] = useState("");
@@ -17,8 +17,12 @@ const Paper: React.FC = () => {
   }, []);
 
   return (
-    <div className="container px-4 mx-auto mt-16 prose">
-      <ReactMarkdown>{documentContent}</ReactMarkdown>
+    <div style={{ marginLeft: "220px" }}>
+      <LeftNav />
+
+      <div className="container px-4 mx-auto mt-16 prose">
+        <ReactMarkdown>{documentContent}</ReactMarkdown>
+      </div>
     </div>
   );
 };
