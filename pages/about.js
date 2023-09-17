@@ -25,8 +25,8 @@ const About = () => {
           I&apos;m interested in how we can use the web to make it easier to
           read and understand content. I&apos;m calling the exploration
           &quot;Augmented Text&quot; and it takes a lot of inspiration from Bret
-          Victor's work with what he calls &quot;explorables&quot; as well as
-          Alan Key's research into &quot;active esasys.&quot;
+          Victor&apos;s work with what he calls &quot;explorables&quot; as well
+          as Alan Key&apos;s research into &quot;active esasys.&quot;
         </p>
 
         <h3>Can I read it?</h3>
