@@ -5,3 +5,5 @@ describe('Academia load test', () => {
 
   });
 });
+
+export {}
