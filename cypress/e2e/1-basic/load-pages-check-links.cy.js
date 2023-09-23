@@ -1,8 +1,11 @@
 describe("Page and Links Check", () => {
   const baseUrl = Cypress.env("BASE_URL") || "http://localhost:3000"; // Fallback to localhost if env variable not set
-  const pages = ["/", "/paper", "/diff", "/a-pattern-library/last-read"].map(
-    (page) => `${baseUrl}${page}`
-  );
+  const pages = [
+    "/",
+    "/thesis",
+    "/journal",
+    "/a-pattern-library/about-the-library",
+  ].map((page) => `${baseUrl}${page}`);
 
   pages.forEach((page) => {
     it(`successfully loads ${page} and has no broken links`, () => {
