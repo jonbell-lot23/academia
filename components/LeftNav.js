@@ -18,7 +18,7 @@ const LeftNav = () => {
     "cite-pull-forward",
   ];
 
-  const generalLinks = ["about", "thesis", "journal"];
+  const generalLinks = ["about", "thesis", "proposal", "journal"];
 
   const renderLinks = (links, basePath = "") =>
     links.map((link) => (
