@@ -1,5 +1,12 @@
 name: End-to-end tests
-on: [push, pull_request]
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '5 17 * * *' # Every day at 5:05 AM NZ
+  workflow_dispatch:
+
 jobs:
   cypress-run:
     env:
