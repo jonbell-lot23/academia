@@ -8,10 +8,10 @@ const Proposal: React.FC = () => {
 
       <div className="container px-4 mx-auto mt-16 prose">
         <h2 className="mb-0">Original research proposal</h2>
-        <span className="my-0 text-sm font-bold text-pink-600">
+        <span className="my-0 text-sm font-bold text-pink-600 hidden">
           Feedback written in pink,{" "}
         </span>
-        <span className="mt-0 text-sm font-bold text-green-600">
+        <span className="mt-0 text-sm font-bold text-green-600 hidden">
           changes from original in green
         </span>
         <div className="mt-8">
@@ -115,7 +115,7 @@ const Proposal: React.FC = () => {
             Communication.
           </p>
 
-          <div className="text-pink-600">
+          <div className="hidden">
             <h3 className="text-pink-600">Feedback on research methods</h3>
             <ol>
               <li>
@@ -181,7 +181,7 @@ const Proposal: React.FC = () => {
             exciting frontier of digital communication.
           </p>
 
-          <div className="text-pink-600">
+          <div className="hidden">
             <h3 className="text-pink-600">Feedback on research outputs</h3>
             <ol>
               <li>How will the work be evaluated?</li>
