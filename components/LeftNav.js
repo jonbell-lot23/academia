@@ -6,37 +6,37 @@ const LeftNav = () => {
   const router = useRouter();
 
   const patternLibraryLinks = [
-    "about-the-library",
-    "personal-breadcrumbs",
-    "last-read-indicator",
-    "reference-labels",
-    "article-diff",
-    "before-and-after-slider",
-    "interactive-graph-compound-interest",
-    "summarise-widget",
-    "digital-patina",
-    "cite-pull-forward",
+    { name: "about-the-library", displayName: "About" },
+    { name: "personal-breadcrumbs", displayName: "Personal Breadcrumbs" },
+    { name: "last-read-indicator", displayName: "Last Read Indicator" },
+    { name: "reference-labels", displayName: "Reference Labels" },
+    { name: "article-diff", displayName: "Article Diff" },
+    { name: "before-and-after-slider", displayName: "Before and After Slider" },
+    {
+      name: "interactive-graph-compound-interest",
+      displayName: "Interactive Graph: Compound Interest",
+    },
+    { name: "summarise-widget", displayName: "Summarise Widget" },
+    { name: "digital-patina", displayName: "✅ Digital Patina" },
+    { name: "cite-pull-forward", displayName: "Cite Pull Forward" },
   ];
 
-  const generalLinks = ["about", "thesis", "proposal"];
+  const generalLinks = [
+    { name: "about", displayName: "About" },
+    { name: "thesis", displayName: "Thesis" },
+    { name: "proposal", displayName: "Proposal" },
+  ];
 
   const renderLinks = (links, basePath = "") =>
-    links.map((link) => (
-      <li key={link}>
-        <Link
-          href={`/${basePath}${link}`}
-          passHref
-          style={{
-            color: router.pathname.endsWith(link) ? "blue" : "black",
-          }}
-        >
-          <span>
-            {link === "about-the-library"
-              ? "About"
-              : link
-                  .split("-")
-                  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-                  .join(" ")}
+    links.map(({ name, displayName }) => (
+      <li key={name}>
+        <Link href={`/${basePath}${name}`} passHref>
+          <span
+            style={{
+              color: router.pathname.endsWith(name) ? "blue" : "black",
+            }}
+          >
+            {displayName}
           </span>
         </Link>
       </li>
