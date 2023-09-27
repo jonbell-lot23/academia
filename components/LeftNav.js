@@ -31,10 +31,12 @@ const LeftNav = () => {
           }}
         >
           <span>
-            {link
-              .split("-")
-              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-              .join(" ")}
+            {link === "about-the-library"
+              ? "About"
+              : link
+                  .split("-")
+                  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+                  .join(" ")}
           </span>
         </Link>
       </li>
