@@ -1,13 +1,15 @@
 import { useRouter } from "next/router";
 import React from "react";
 import Link from "next/link";
+import BreadcrumbTracker from "./BreadcrumbTracker";
 
 const LeftNav = () => {
   const router = useRouter();
 
   const patternLibraryLinks = [
     { name: "about-the-library", displayName: "About" },
-    { name: "personal-breadcrumbs", displayName: "Personal Breadcrumbs" },
+    { name: "digital-patina", displayName: "✅ Digital Patina" },
+    { name: "personal-breadcrumbs", displayName: "✅ Personal Breadcrumbs" },
     { name: "last-read-indicator", displayName: "Last Read Indicator" },
     { name: "reference-labels", displayName: "Reference Labels" },
     { name: "article-diff", displayName: "Article Diff" },
@@ -17,7 +19,7 @@ const LeftNav = () => {
       displayName: "Interactive Graph: Compound Interest",
     },
     { name: "summarise-widget", displayName: "Summarise Widget" },
-    { name: "digital-patina", displayName: "✅ Digital Patina" },
+
     { name: "cite-pull-forward", displayName: "Cite Pull Forward" },
   ];
 
@@ -32,6 +34,7 @@ const LeftNav = () => {
       <li key={name}>
         <Link href={`/${basePath}${name}`} passHref>
           <span
+            className="tracked-link"
             style={{
               color: router.pathname.endsWith(name) ? "blue" : "black",
             }}
@@ -59,6 +62,7 @@ const LeftNav = () => {
 
       <h2 className="font-bold">A Pattern Library</h2>
       <ul>{renderLinks(patternLibraryLinks, "a-pattern-library/")}</ul>
+      <BreadcrumbTracker />
     </div>
   );
 };

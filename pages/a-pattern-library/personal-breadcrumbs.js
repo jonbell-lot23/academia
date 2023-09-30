@@ -1,5 +1,6 @@
 import React from "react";
 import LeftNav from "../../components/LeftNav";
+import BreadcrumbDisplay from "../../components/BreadcrumbDisplay";
 
 const PersonlBreadcrumbs = () => {
   return (
@@ -10,7 +11,6 @@ const PersonlBreadcrumbs = () => {
         className="container px-4 mx-auto mt-16 prose"
       >
         <h2>Personal breadcrumbs</h2>
-
         <p>
           When you navigate through different pages on a website and want to
           retrace your steps, you have limited options available. You can look
@@ -24,6 +24,7 @@ const PersonlBreadcrumbs = () => {
           shares other information that might help you navigate back to find
           something you saw before.
         </p>
+        <BreadcrumbDisplay />
       </div>
     </div>
   );
