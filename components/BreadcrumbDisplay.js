@@ -19,7 +19,7 @@ const BreadcrumbDisplay = () => {
     <div>
       <h2 className="mb-0">Example</h2>
       <h4 className="mt-0">(these are the places you've been on this site)</h4>
-      <ul>
+      <ul className="breadcrumb-list">
         {breadcrumbs.map((breadcrumb, index) => (
           <li key={index}>{breadcrumb}</li>
         ))}
