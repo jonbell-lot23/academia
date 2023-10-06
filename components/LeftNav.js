@@ -10,7 +10,7 @@ const LeftNav = () => {
     { name: "about-the-library", displayName: "About" },
     { name: "digital-patina", displayName: "✅ Digital Patina" },
     { name: "personal-breadcrumbs", displayName: "✅ Personal Breadcrumbs" },
-    { name: "last-read-indicator", displayName: "Last Read Indicator" },
+    { name: "last-read-indicator", displayName: "✅ Last Read Indicator" },
     { name: "reference-labels", displayName: "Reference Labels" },
     { name: "article-diff", displayName: "Article Diff" },
     { name: "before-and-after-slider", displayName: "Before and After Slider" },
