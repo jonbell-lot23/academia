@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/BreadcrumbTracker.js"  ],
+, "components/BreadcrumbTracker.js", "pages/a-pattern-library/reference-labels.js"  ],
   "exclude": [
     "node_modules"
   ]
