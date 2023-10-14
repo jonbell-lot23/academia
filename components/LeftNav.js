@@ -13,7 +13,10 @@ const LeftNav = () => {
     { name: "last-read-indicator", displayName: "✅ Last Read Indicator" },
     { name: "reference-labels", displayName: "✅ Reference Labels" },
     { name: "article-diff", displayName: "Article Diff" },
-    { name: "before-and-after-slider", displayName: "Before and After Slider" },
+    {
+      name: "before-and-after-slider",
+      displayName: "✅ Before and After Slider",
+    },
     {
       name: "interactive-graph-compound-interest",
       displayName: "Interactive Graph: Compound Interest",
