@@ -19,9 +19,9 @@ const LeftNav = () => {
     },
     {
       name: "interactive-graph-compound-interest",
-      displayName: "Interactive Graph: Compound Interest",
+      displayName: "✅ Interactive numbers",
     },
-    { name: "summarise-widget", displayName: "Summarise Widget" },
+    { name: "summarise-widget", displayName: "✅ Summarise Widget" },
 
     { name: "cite-pull-forward", displayName: "Cite Pull Forward" },
   ];
