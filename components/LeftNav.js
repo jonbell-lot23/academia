@@ -23,7 +23,7 @@ const LeftNav = () => {
     },
     { name: "summarise-widget", displayName: "✅ Summarise Widget" },
 
-    { name: "cite-pull-forward", displayName: "Cite Pull Forward" },
+    { name: "cite-pull-forward", displayName: "✅ Cite Pull Forward" },
   ];
 
   const generalLinks = [

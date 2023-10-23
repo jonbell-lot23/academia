@@ -5,6 +5,14 @@ import LeftNav from "../../components/LeftNav";
 const Tooltip = ({ children, title }) => {
   const [hovering, setHovering] = useState(false);
 
+  // Replace newline characters with <br /> tags
+  const formattedTitle = title.split("\n").map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      {index < title.split("\n").length - 1 && <br />}
+    </React.Fragment>
+  ));
+
   return (
     <div
       style={{ position: "relative", display: "inline-block" }}
@@ -12,23 +20,26 @@ const Tooltip = ({ children, title }) => {
       onMouseLeave={() => setHovering(false)}
     >
       {children}
-      {hovering && (
-        <div
-          className="p-3 bg-white border rounded-lg drop-shadow-lg w-96"
-          style={{ position: "absolute", zIndex: 1 }}
-        >
-          {title}
-        </div>
-      )}
+      <div
+        className={`p-3 bg-white border rounded-lg drop-shadow-lg w-96 ${
+          hovering ? "block" : "hidden"
+        }`}
+        style={{ position: "absolute", zIndex: 1 }}
+      >
+        {formattedTitle}
+      </div>
     </div>
   );
 };
 
 const CitePullForward = () => {
-  const [lessWrongSummary, setLessWrongSummary] = useState("");
+  const [lessWrongSummary, setLessWrongSummary] = useState(
+    "This is where I'd call a summary service"
+  );
 
   useEffect(() => {
     // Fetch summary from LessWrong.com
+
     fetch("https://api.yourservice.com/get-summary?url=https://lesswrong.com")
       .then((response) => response.json())
       .then((data) => setLessWrongSummary(data.summary))
@@ -83,7 +94,7 @@ const CitePullForward = () => {
           LessWrong's pull forward citation method is a step towards a more
           nuanced and efficient way of dealing with citations and references,
           acting as a bridge between static text and the dynamic, interconnected
-          <Tooltip title="This Is How Apple Rolls\n\nThursday, 13 May 2010\n\nThis is how the designers and engineers at Apple roll: They roll.\n\nThey take something small, simple, and painstakingly well considered. They ruthlessly cut features to derive the absolute minimum core product they can start with. They polish those features to a shiny intensity. At an anticipated media event, Apple reveals this core product as its Next Big Thing, and explains — no, wait, it simply shows — how painstakingly thoughtful and well designed this core product is. The company releases the product for sale.">
+          <Tooltip title="This Is How Apple Rolls: This is how the designers and engineers at Apple roll: They roll. They take something small, simple, and painstakingly well considered. They ruthlessly cut features to derive the absolute minimum core product they can start with. They polish those features to a shiny intensity. At an anticipated media event, Apple reveals this core product as its Next Big Thing, and explains — no, wait, it simply shows — how painstakingly thoughtful and well designed this core product is. The company releases the product for sale.">
             <a href="https://daringfireball.net/2010/05/this_is_how_apple_rolls">
               {" "}
               digital information landscape
