@@ -1,9 +1,30 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
-import SampleComponent from "../components/SampleComponent";
+import One from "../components/One";
+import Two from "../components/Two";
+import Three from "../components/Three";
+import Four from "../components/Four";
+import Five from "../components/Five";
+import Six from "../components/Six";
+import Seven from "../components/Seven";
+import Eight from "../components/Eight";
+import Nine from "../components/Nine";
+import Ten from "../components/Ten";
+
 import LeftNav from "../components/LeftNav";
 
-const components = { SampleComponent }; // Ensure this matches the component used in your MDX
+const components = {
+  One,
+  Two,
+  Three,
+  Four,
+  Five,
+  Six,
+  Seven,
+  Eight,
+  Nine,
+  Ten,
+};
 
 export default function ThesisPage({ source }) {
   return (
