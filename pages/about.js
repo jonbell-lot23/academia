@@ -16,7 +16,7 @@ const About = () => {
         <h2>About this page</h2>
         <p>
           Hello! My name is Jon Bell and this is where I&apos;m writing my
-          Masters of Design thesis. It&apos;ll be done in 2025, and this site
+          Masters of Design thesis. It&apos;ll be done in 2024, and this site
           will show my work as I go.
         </p>
 
