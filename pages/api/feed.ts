@@ -4,7 +4,8 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+
   const protocol = req.headers["x-forwarded-proto"] || "http";
   const host = req.headers["host"] || req.url.split("/")[2];
   const feedUrl = `${protocol}://${host}/api/feed`;
@@ -42,3 +43,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   res.setHeader("Content-Type", "application/rss+xml");
   res.send(feed.xml());
 };
+
+export default handler;

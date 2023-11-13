@@ -47,8 +47,8 @@ export async function getServerSideProps(context) {
   const res = await fetch(`${baseUrl}/api/fetchVersion`);
   const data = await res.json();
 
-  // Serialize the content for MDX
-  const mdxSource = await serialize(data.content, { components });
+  // Serialize the content for MDX without the 'components' option
+  const mdxSource = await serialize(data.content);
 
   return { props: { source: mdxSource } };
 }

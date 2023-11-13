@@ -6,7 +6,7 @@ const Index: React.FC = () => {
 
   useEffect(() => {
     router.push("/about");
-  }, []);
+  }, [router]);
 
   return null;
 };
