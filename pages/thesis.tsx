@@ -1,6 +1,6 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
-import One from "../components/One";
+import DancingAboutArchitecture from "../components/DancingAboutArchitecture";
 import Two from "../components/Two";
 import Three from "../components/Three";
 import Four from "../components/Four";
@@ -14,7 +14,7 @@ import Ten from "../components/Ten";
 import LeftNav from "../components/LeftNav";
 
 const components = {
-  One,
+  DancingAboutArchitecture,
   Two,
   Three,
   Four,

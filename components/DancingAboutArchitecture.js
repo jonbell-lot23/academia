@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const DancingAboutArchitecture = () => {
+const One = () => {
   const [selectedFormat, setSelectedFormat] = useState(
     "Casual academic format"
   );
@@ -113,4 +113,4 @@ const DancingAboutArchitecture = () => {
   );
 };
 
-export default DancingAboutArchitecture;
+export default One;
