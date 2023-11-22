@@ -21,7 +21,7 @@ const SummariseWidget = () => {
   ];
 
   return (
-    <div class="mainContent">
+    <div className="mainContent">
       <LeftNav />
       <div
         id="cite-pull-forward-content"

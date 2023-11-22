@@ -3,7 +3,7 @@ import LeftNav from "../components/LeftNav";
 
 const Proposal: React.FC = () => {
   return (
-    <div class="mainContent">
+    <div className="mainContent">
       <LeftNav />
 
       <div className="container px-4 mx-auto mt-16 prose">

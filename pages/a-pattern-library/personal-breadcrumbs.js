@@ -4,7 +4,7 @@ import BreadcrumbDisplay from "../../components/BreadcrumbDisplay";
 
 const PersonlBreadcrumbs = () => {
   return (
-    <div class="mainContent">
+    <div className="mainContent">
       <LeftNav />
       <div
         id="digital-patina-content"

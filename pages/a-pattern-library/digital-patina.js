@@ -28,7 +28,7 @@ const DigitalPatina = () => {
   };
 
   return (
-    <div class="mainContent">
+    <div className="mainContent">
       <LeftNav />
       <div
         id="digital-patina-content"

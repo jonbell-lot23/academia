@@ -76,7 +76,7 @@ const LastReadIndicator = () => {
   };
 
   return (
-    <div class="mainContent">
+    <div className="mainContent">
       <LeftNav />
       <div className="mx-auto prose">
         <button

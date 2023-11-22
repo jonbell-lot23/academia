@@ -7,7 +7,7 @@ import {
 
 const BeforeAndAfterSlider = () => {
   return (
-    <div class="mainContent">
+    <div className="mainContent">
       <LeftNav />
 
       <div
