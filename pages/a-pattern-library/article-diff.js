@@ -4,7 +4,7 @@ import Diff from "../diff";
 
 const ArticleDiff = () => {
   return (
-    <div style={{ marginLeft: "220px" }}>
+    <div class="mainContent">
       <LeftNav />
       <div
         id="digital-patina-content"

@@ -31,3 +31,47 @@ a {
   margin-left: 1.6rem;
   font-size: 18px;
 }
+
+.left-nav.closed {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .menu-button {
+    display: none;
+  }
+  .left-nav {
+    display: block;
+  }
+
+  .mainContent {
+    margin-left: 220px;
+  }
+
+  .left-nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background: #f4f4f4;
+    padding: 20px;
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-button {
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+  .left-nav {
+    display: block;
+  }
+
+  .left-nav-container {
+    padding: 20px;
+  }
+}

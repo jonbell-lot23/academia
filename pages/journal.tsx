@@ -48,7 +48,7 @@ const Home: NextPage<Props> = ({ posts }) => {
         <meta name="description" content="Jon's Adventures in Academia" />
       </Head>
 
-      <div style={{ marginLeft: "220px" }}>
+      <div class="mainContent">
         <LeftNav />
         <div className="max-w-screen-md min-h-screen mx-auto">
           <div className="px-4 py-8 mx-auto">

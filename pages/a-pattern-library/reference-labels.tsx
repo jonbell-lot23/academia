@@ -5,7 +5,7 @@ import CustomLabelLink from "../../components/CustomLabelLink";
 
 const ReferenceLabels: React.FC = () => {
   return (
-    <div style={{ marginLeft: "220px" }}>
+    <div class="mainContent">
       <LeftNav />
       <div
         id="digital-patina-content"

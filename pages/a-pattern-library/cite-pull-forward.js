@@ -47,7 +47,7 @@ const CitePullForward = () => {
   }, []);
 
   return (
-    <div style={{ marginLeft: "220px" }}>
+    <div class="mainContent">
       <LeftNav />
       <div
         id="cite-pull-forward-content"

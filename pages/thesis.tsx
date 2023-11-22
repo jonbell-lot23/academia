@@ -28,7 +28,7 @@ const components = {
 
 export default function ThesisPage({ source }) {
   return (
-    <div style={{ marginLeft: "220px" }}>
+    <div class="mainContent">
       <LeftNav />
       <div className="container px-4 mx-auto mt-16 prose">
         <MDXRemote {...source} components={components} />
