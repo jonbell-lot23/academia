@@ -56,6 +56,9 @@ const LeftNav = () => {
       }
     };
 
+    // Call the function to set the initial state
+    handleResize();
+
     window.addEventListener("resize", handleResize);
 
     // Clean up the event listener on component unmount

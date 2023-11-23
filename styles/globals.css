@@ -72,6 +72,9 @@ a {
   }
 
   .left-nav-container {
-    padding: 20px;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 600px;
+    top: 12px;
   }
 }
