@@ -1,0 +1,21 @@
+@keyframes color-wash {
+  0% {
+    background-color: #ff0000;
+  }
+  25% {
+    background-color: #00ff00;
+  }
+  50% {
+    background-color: #0000ff;
+  }
+  75% {
+    background-color: #ff00ff;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
+
+.color-wash {
+  animation: color-wash 5s linear infinite;
+}

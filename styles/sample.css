@@ -1,0 +1,24 @@
+@keyframes color-wash {
+  0% {
+    background-color: #f2f2f2; /* off-white */
+  }
+  25% {
+    background-color: #e0f7fa; /* very subtle blue */
+  }
+  50% {
+    background-color: #e8f5e9; /* very subtle green */
+  }
+  75% {
+    background-color: #f3e5f5; /* very subtle purple */
+  }
+  100% {
+    background-color: #f2f2f2; /* off-white */
+  }
+}
+
+.color-wash {
+  animation: color-wash 10s linear infinite;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #555;
+}
