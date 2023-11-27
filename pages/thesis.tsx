@@ -4,7 +4,7 @@ import DancingAboutArchitecture from "../components/DancingAboutArchitecture";
 import Two from "../components/Two";
 import Three from "../components/Three";
 import Four from "../components/Four";
-import Five from "../components/Five";
+import DocumentStats from "../components/Five";
 import Six from "../components/Six";
 import Seven from "../components/Seven";
 import Eight from "../components/Eight";
@@ -18,7 +18,7 @@ const components = {
   Two,
   Three,
   Four,
-  Five,
+  DocumentStats,
   Six,
   Seven,
   Eight,

@@ -1,5 +1,3 @@
-// pages/api/fetchVersion.js
-
 import fs from 'fs';
 import path from 'path';
 
@@ -14,11 +12,17 @@ export default async function handler(req, res) {
   }
 
   try {
-    const content = fs.readFileSync(
-      path.resolve(`./versions/${filename}.md`),
-      'utf8'
-    );
-    res.status(200).json({ content });
+    const filePath = path.resolve(`./versions/${filename}.md`);
+    const content = fs.readFileSync(filePath, 'utf8');
+
+    // Calculate word count
+    const wordCount = content.split(/\s+/).filter(Boolean).length;
+
+    // Get file creation date
+    const stats = fs.statSync(filePath);
+    const creationDate = stats.birthtime;
+
+    res.status(200).json({ content, wordCount, creationDate });
   } catch (error) {
     res
       .status(500)
