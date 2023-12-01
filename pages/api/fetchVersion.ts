@@ -18,9 +18,8 @@ export default async function handler(req, res) {
     // Calculate word count
     const wordCount = content.split(/\s+/).filter(Boolean).length;
 
-    // Get file creation date
-    const stats = fs.statSync(filePath);
-    const creationDate = stats.birthtime;
+    // Get file creation date from filename
+    const creationDate = filename.split('-').slice(1).join(' ');
 
     res.status(200).json({ content, wordCount, creationDate });
   } catch (error) {

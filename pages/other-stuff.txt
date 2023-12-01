@@ -1,0 +1,41 @@
+### Google Scholar follow-ups
+
+- [https://www.chatpdf.com/c/EYq9uejVIcOLHU0W26v0w][1] for “interactive decoupage” \*
+
+### See also:
+
+- Newsgame
+- PhET Interactive Simulations
+- Persuasive Games
+
+### Notes to keep in mind since last time
+
+- Click-to-expand app is a good thing to explore and expand on
+- Right-click to translate is a good thing at the OS level, but providing other options are good. \<— I forget what this note meant
+- William recommended [https://www.preposterousuniverse.com/biggestideas/][2] and said that could be a fantastic way to explain text
+- Multi-touch versus scrolljacking — William has interesting points about this
+- Good article: https://www.brookings.edu/wp-content/ uploads/2019/04/how_playful_learning_can_help_leapfrog_progress_in_education.pdf
+- Good reference from Walter: [https://wiki.digitalmethods.net/Dmi/ToolDatabase][3]
+
+### Storyboard
+
+[https://academia.lot23.com/uploads/beyond-snowfall-1.png][4]
+[https://academia.lot23.com/uploads/beyond-snowfall-2.png][5]
+[https://academia.lot23.com/uploads/beyond-snowfall-3.png][6]
+[https://academia.lot23.com/uploads/beyond-snowfall-4.png][7]
+[https://academia.lot23.com/uploads/beyond-snowfall-5.png][8]
+[https://academia.lot23.com/uploads/beyond-snowfall-6.png][9]
+
+Summary so far:
+
+- The written word was a big innovation
+- Now it’s networked and we have multimedia
+- But between multimedia and games, there’s this interesting space
+- Here are three important works: explorable explanations, snowfall, the web’s grain
+- Explorable explanations is about making text into a place to learn
+- Then snowfall showed this off and won a pulitzer
+- It blended everything together in an important way
+- Tangible feature #1: elements reacted to your scroll position
+- Tangible features #2-#4: interactivity, layout, and animation
+
+—

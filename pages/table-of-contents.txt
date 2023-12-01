@@ -1,0 +1,45 @@
+### Table of contents
+
+- In the beginning, there were words
+- A survey of multimedia in the present day
+- "Explorable Explanations" and "Active Essays"
+- The importance of Snowfall
+- The Snowfall backlash (The Grain of the Web)
+- Going Against the Grain in Games
+  - Minecraft
+  - Visual Novels
+  - Embracing the grain
+- Going Against the Grain in Data Visualisations
+  - Tufte's vision
+  - Poor imitations
+  - Tufte's misstep: redesign the iPhone stocks app
+  - Striking the balance
+  - And so...
+- Innovating Within and Beyond the Grain: Exploring New Frontiers in Text
+  - Breaking the mould: "House of Leaves"
+  - Adapting to the Environment: "How Music Works"
+  - "Homestuck": A Multi-Modal Marvel
+  - NEW: GOOGLE EXAMPLES
+  - NEW: NICKY CASE
+  - NEW: THAT BIKE GUY
+  - Web Alternate Reality Games (ARGs)
+  - "LOST": Transmedia Storytelling
+  - Tying it All Together
+- Innovating from Inspiration
+  - Interactivity
+  - Multimodality
+  - Narrative Complexity
+  - Personalisation and Adaptation
+  - Accessibility
+  - And so...
+- An Augmented Text Pattern Library
+  - Before and After Slider
+  - Last Read Indicator
+  - Article Diff
+  - Interactive Graph (compound interest)
+  - Summarise Widget
+  - Digital Patina
+  - Cite Pull-Forward
+- Final bits and summary
+
+<DancingAboutArchitecture />

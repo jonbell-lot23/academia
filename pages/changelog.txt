@@ -1,0 +1,45 @@
+### Changelog
+
+**2023-11-22**
+* Registered augmented-text.com
+* Removed green checks
+* Resized left nav
+* I think I confirmed that my auto-backup process is working
+
+* I need a "notes to self" page for sure, plus an OmniFocus project
+* I should have a little control panel at the top of the page with a bunch of my widgets
+* I should have the ability to bookmark a part of the page
+* 
+
+**2023-11-14**
+Now trying to put real examples into my code.
+
+**2023-11-12**
+I got dynamic stuff working! Yay!
+
+**2023-11-10**
+Got through the full first runthrough of my printed out doc. That's good! Also met with Walter. Also good! Next I want to start making more tangible examples.
+
+**2023-11-05**
+I printed out the whole paper and marked it up. This is good because it means I can get the quality bar higher. Soon I need to figure out how to embed examples.
+
+**2023-10-29**
+I removed some todo items and turned them into real body text. Now I am going to print them out on paper and mark them up by hand. This is the best way to do it.
+
+**2023-10-23**
+I finished the last of my 8 examples, at least at a very simple MVP level. They're all very simple examples and I'll need to make them much, much better. But it's something. Something to build on.
+
+**2023-10-08**
+There are several examples I need to fold in. I just discovered Google's explorables page (https://pair.withgoogle.com/explorables/) and need to analyse it and pull out some examples. For example, the ability to scroll through time and see the results down below is something I need to pull into my gallery for sure.
+
+Also I need to do more analysis into Nicky Case's work. Parable of the Polygons is a great case study, so to speak, but also Loopy and other projects they've done. This is a goldmine of content, but I need to figure out how much I want to incorporate this into my work.
+
+The final one, and it's a doozy, is https://ciechanow.ski/archives/ . He's so good at writing these kinds of articles. Just looking at his work, it's obvious why his approaches are worlds beyond any book, YouTube video, podcast, or embedded media. He's a key example that I should be emphasising.
+
+--
+
+I should also be pulling out actual patterns and moments from each of these inspiring voices to componentise them. It's fine to point to Parable of the Polygons but what are the specific interactions that make it amazing? And why don't we just call it "educational software?" I need to talk about the scope of what I'm doing, where instead of referring broadly to interactive media, I am attempting to refer to specific techniques.
+
+Note to self:
+
+- Maybe personal notes is a thing that can be added to the label thing
