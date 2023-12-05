@@ -1,6 +1,8 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import DancingAboutArchitecture from "../components/DancingAboutArchitecture";
+import { BeforeAndAfterSliderEmbed } from "./a-pattern-library/before-and-after-slider";
+import { SummariseWidgetEmbed } from "./a-pattern-library/summarise-widget";
 import Two from "../components/Two";
 import Three from "../components/Three";
 import Four from "../components/Four";
@@ -9,12 +11,13 @@ import Six from "../components/Six";
 import Seven from "../components/Seven";
 import Eight from "../components/Eight";
 import Nine from "../components/Nine";
-import Ten from "../components/Ten";
 
 import LeftNav from "../components/LeftNav";
 
 const components = {
   DancingAboutArchitecture,
+  BeforeAndAfterSliderEmbed,
+  SummariseWidgetEmbed,
   Two,
   Three,
   Four,
@@ -23,7 +26,6 @@ const components = {
   Seven,
   Eight,
   Nine,
-  Ten,
 };
 
 export default function ThesisPage({ source }) {

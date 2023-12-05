@@ -8,9 +8,14 @@ const DocumentStats = () => {
       try {
         const response = await fetch("/api/fetchVersion");
         const data = await response.json();
+        // Extract date from filename
+        const dateFromFileName = data.creationDate.split(".")[0];
         setStats({
           wordCount: data.wordCount,
-          creationDate: new Date(data.creationDate).toLocaleDateString(),
+          // Format date in yyyy-mm-dd format
+          creationDate: new Date(
+            dateFromFileName.split("-").join("/")
+          ).toLocaleDateString(),
         });
       } catch (error) {
         console.error("Error fetching document stats:", error);
