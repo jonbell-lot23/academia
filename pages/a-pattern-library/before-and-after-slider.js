@@ -77,3 +77,5 @@ export const BeforeAndAfterSlider = () => {
     </div>
   );
 };
+
+export default BeforeAndAfterSlider;
