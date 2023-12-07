@@ -1,18 +1,26 @@
-// Your existing imports
 import React from "react";
 import LeftNav from "../../components/LeftNav";
 import CustomLabelLink from "../../components/CustomLabelLink";
 
-const ReferenceLabels: React.FC = () => {
+interface ReferenceLabelsProps {
+  format?: "embed" | "standalone";
+}
+
+const ReferenceLabels: React.FC<ReferenceLabelsProps> = ({
+  format = "standalone",
+}) => {
   return (
-    <div className="mainContent">
-      <LeftNav />
+    <div
+      className={format === "standalone" ? "mainContent" : "embeddedContent"}
+    >
+      {format === "standalone" && <LeftNav />}
       <div
         id="digital-patina-content"
-        className="container px-4 mx-auto mt-16 prose"
+        className={`container ${
+          format === "standalone" ? "px-4 mt-16" : ""
+        } mx-auto prose`}
       >
         <h2>Reference labels</h2>
-
         <p>
           It can be hard to remember what brought you to a tab. Maybe you
           clicked something that said &quot;houses like these are

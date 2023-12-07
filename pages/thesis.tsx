@@ -10,7 +10,7 @@ import DocumentStats from "../components/Five";
 import Six from "../components/Six";
 import Seven from "../components/Seven";
 import Eight from "../components/Eight";
-import Nine from "../components/Nine";
+import ReferenceLabels from "./a-pattern-library/reference-labels";
 
 import LeftNav from "../components/LeftNav";
 
@@ -25,7 +25,7 @@ const components = {
   Six,
   Seven,
   Eight,
-  Nine,
+  ReferenceLabels,
 };
 
 export default function ThesisPage({ source }) {
