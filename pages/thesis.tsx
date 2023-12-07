@@ -1,8 +1,8 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import DancingAboutArchitecture from "../components/DancingAboutArchitecture";
-import { BeforeAndAfterSliderEmbed } from "./a-pattern-library/before-and-after-slider";
-import { SummariseWidgetEmbed } from "./a-pattern-library/summarise-widget";
+import { BeforeAndAfterSlider } from "./a-pattern-library/before-and-after-slider";
+import { SummariseWidget } from "./a-pattern-library/summarise-widget";
 import Two from "../components/Two";
 import Three from "../components/Three";
 import Four from "../components/Four";
@@ -16,8 +16,8 @@ import LeftNav from "../components/LeftNav";
 
 const components = {
   DancingAboutArchitecture,
-  BeforeAndAfterSliderEmbed,
-  SummariseWidgetEmbed,
+  BeforeAndAfterSlider,
+  SummariseWidget,
   Two,
   Three,
   Four,

@@ -17,13 +17,13 @@ const LeftNav = () => {
     { name: "article-diff", displayName: "Article Diff" },
     {
       name: "before-and-after-slider",
-      displayName: " Before and After Slider",
+      displayName: "✅ Before and After Slider",
     },
     {
       name: "interactive-graph-compound-interest",
       displayName: " Interactive numbers",
     },
-    { name: "summarise-widget", displayName: " Summarise Widget" },
+    { name: "summarise-widget", displayName: "✅ Summarise Widget" },
     { name: "cite-pull-forward", displayName: " Cite Pull Forward" },
   ];
 
