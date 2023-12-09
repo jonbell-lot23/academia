@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import LeftNav from "../../components/LeftNav";
 
-const InteractiveGraphCompoundInterest = () => {
+interface InteractiveGraphCompoundInterestProps {
+  format?: "embed" | "standalone";
+}
+
+const InteractiveGraphCompoundInterest: React.FC<
+  InteractiveGraphCompoundInterestProps
+> = ({ format = "standalone" }) => {
   const [income, setIncome] = useState(97667); // Average income in NZD, average of the data found
   const taxRate = 0.3; // Example tax rate of 30%, this is a simplification as tax rate varies with income
   const taxPaid = income * taxRate;
 
-  // Example distribution of tax dollars, actual distribution data couldn't be found, kept your distribution
   const taxDistribution = {
     Healthcare: 0.2,
     "Social Security": 0.18,
@@ -21,11 +26,15 @@ const InteractiveGraphCompoundInterest = () => {
   };
 
   return (
-    <div className="mainContent">
-      <LeftNav />
+    <div
+      className={format === "standalone" ? "mainContent" : "embeddedContent"}
+    >
+      {format === "standalone" && <LeftNav />}
       <div
         id="cite-pull-forward-content"
-        className="container px-4 mx-auto mt-16 prose"
+        className={`container ${
+          format === "standalone" ? "px-4 mt-16" : ""
+        } mx-auto prose`}
       >
         <h2>Tax Distribution Calculator</h2>
         <p>

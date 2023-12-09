@@ -1,9 +1,14 @@
-// DigitalPatina.js
 import React, { useState } from "react";
 import LeftNav from "../../components/LeftNav";
-import ShadeBox from "../../components/ShadeBox"; // assuming it's in the same folder
+import ShadeBox from "../../components/ShadeBox";
 
-const DigitalPatina = () => {
+interface DigitalPatinaProps {
+  format?: "embed" | "standalone";
+}
+
+const DigitalPatina: React.FC<DigitalPatinaProps> = ({
+  format = "standalone",
+}) => {
   const initialColor = "#efefef";
   const [colors, setColors] = useState({
     Politics: initialColor,
@@ -28,14 +33,17 @@ const DigitalPatina = () => {
   };
 
   return (
-    <div className="mainContent">
-      <LeftNav />
+    <div
+      className={format === "standalone" ? "mainContent" : "embeddedContent"}
+    >
+      {format === "standalone" && <LeftNav />}
       <div
         id="digital-patina-content"
-        className="container px-4 mx-auto mt-16 prose"
+        className={`container ${
+          format === "standalone" ? "px-4 mt-16" : ""
+        } mx-auto prose`}
       >
-        <h2>Digtal patina</h2>
-
+        <h2>Digital patina</h2>
         <p>
           BBC did a thing where visited links got darker rather than being
           binary. This is a big deal, and made a big impression on me.

@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/BreadcrumbTracker.js", "pages/a-pattern-library/reference-labels.js", "pages/page.mdx"  ],
+, "components/BreadcrumbTracker.js", "pages/a-pattern-library/reference-labels.js", "pages/page.mdx", "pages/a-pattern-library/interactive-numbers.tsx"  ],
   "exclude": [
     "node_modules"
   ]

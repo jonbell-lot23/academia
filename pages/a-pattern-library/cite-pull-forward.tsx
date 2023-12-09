@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import LeftNav from "../../components/LeftNav";
 
+interface CitePullForwardProps {
+  format?: "embed" | "standalone";
+}
+
 // Tooltip Component
 const Tooltip = ({ children, title }) => {
   const [hovering, setHovering] = useState(false);
@@ -32,7 +36,9 @@ const Tooltip = ({ children, title }) => {
   );
 };
 
-const CitePullForward = () => {
+const CitePullForward: React.FC<CitePullForwardProps> = ({
+  format = "standalone",
+}) => {
   const [lessWrongSummary, setLessWrongSummary] = useState(
     "This is where I'd call a summary service"
   );
@@ -47,14 +53,18 @@ const CitePullForward = () => {
   }, []);
 
   return (
-    <div className="mainContent">
-      <LeftNav />
+    <div
+      className={format === "standalone" ? "mainContent" : "embeddedContent"}
+    >
+      {format === "standalone" && <LeftNav />}
       <div
         id="cite-pull-forward-content"
-        className="container px-4 mx-auto mt-16 prose"
+        className={`container ${
+          format === "standalone" ? "px-4 mt-16" : ""
+        } mx-auto prose`}
       >
-        <h2>Cite Pull-foward</h2>
-        <p>
+        <h2>Cite Pull-forward</h2>
+        <div>
           The transition from traditional books to digital platforms represents
           a leap in how we access and interact with information. Whereas
           traditional books required readers to tediously navigate through
@@ -70,8 +80,8 @@ const CitePullForward = () => {
           digital realm, often necessitating that readers navigate to the bottom
           of a page or click through to another page to access referenced
           materials.
-        </p>
-        <p>
+        </div>
+        <div>
           <Tooltip title={lessWrongSummary}>
             <a href="https://lesswrong.com">LessWrong.com</a>
           </Tooltip>
@@ -85,8 +95,8 @@ const CitePullForward = () => {
           approach can be executed manually or automatically, adding a layer of
           user-friendly functionality that significantly enhances the reader's
           ability to swiftly assess and access cited materials.
-        </p>
-        <p>
+        </div>
+        <div>
           This fresh approach to citations embodies a broader movement towards
           "Augmented Text." Augmented Text goes beyond traditional multimedia by
           introducing layers of interactivity and responsive elements that
@@ -101,8 +111,8 @@ const CitePullForward = () => {
             </a>
           </Tooltip>{" "}
           we navigate today.
-        </p>
-        <p>
+        </div>
+        <div>
           In the endeavor to pioneer new frontiers in text, exploring diverse,
           innovative methods, and drawing inspiration from platforms like
           LessWrong, is essential. As we transition from merely replicating
@@ -112,7 +122,7 @@ const CitePullForward = () => {
           evolution is not just about translating old methods into a new medium,
           but innovating to enhance comprehension, engagement, and the seamless
           flow of ideas in our digital discourse.
-        </p>
+        </div>
       </div>
     </div>
   );

@@ -2,13 +2,23 @@ import React from "react";
 import LeftNav from "../../components/LeftNav";
 import BreadcrumbDisplay from "../../components/BreadcrumbDisplay";
 
-const PersonlBreadcrumbs = () => {
+interface PersonalBreadcrumbsProps {
+  format?: "embed" | "standalone";
+}
+
+const PersonalBreadcrumbs: React.FC<PersonalBreadcrumbsProps> = ({
+  format = "standalone",
+}) => {
   return (
-    <div className="mainContent">
-      <LeftNav />
+    <div
+      className={format === "standalone" ? "mainContent" : "embeddedContent"}
+    >
+      {format === "standalone" && <LeftNav />}
       <div
         id="digital-patina-content"
-        className="container px-4 mx-auto mt-16 prose"
+        className={`container ${
+          format === "standalone" ? "px-4 mt-16" : ""
+        } mx-auto prose`}
       >
         <h2>Personal breadcrumbs</h2>
         <p>
@@ -30,4 +40,4 @@ const PersonlBreadcrumbs = () => {
   );
 };
 
-export default PersonlBreadcrumbs;
+export default PersonalBreadcrumbs;

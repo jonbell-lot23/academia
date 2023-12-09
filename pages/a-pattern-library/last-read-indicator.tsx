@@ -1,7 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import LeftNav from "../../components/LeftNav";
 
-const LastReadIndicator = () => {
+interface LastReadIndicatorProps {
+  format?: "embed" | "standalone";
+}
+
+const LastReadIndicator: React.FC<LastReadIndicatorProps> = ({
+  format = "standalone",
+}) => {
   const [lastSection, setLastSection] = useState("section-0");
   const observer = useRef(null);
 
@@ -76,9 +82,15 @@ const LastReadIndicator = () => {
   };
 
   return (
-    <div className="mainContent">
-      <LeftNav />
-      <div className="mx-auto prose">
+    <div
+      className={format === "standalone" ? "mainContent" : "embeddedContent"}
+    >
+      {format === "standalone" && <LeftNav />}
+      <div
+        className={`mx-auto prose ${
+          format === "standalone" ? "px-4 mt-16" : ""
+        }`}
+      >
         <button
           onClick={scrollToLastReadPosition}
           className="px-2 mt-6 text-white bg-blue-600 rounded-sm hover:bg-blue-500"

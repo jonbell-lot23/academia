@@ -1,31 +1,31 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import DancingAboutArchitecture from "../components/DancingAboutArchitecture";
-import { BeforeAndAfterSlider } from "./a-pattern-library/before-and-after-slider";
-import { SummariseWidget } from "./a-pattern-library/summarise-widget";
-import Two from "../components/Two";
-import Three from "../components/Three";
-import Four from "../components/Four";
-import DocumentStats from "../components/Five";
-import Six from "../components/Six";
-import Seven from "../components/Seven";
-import Eight from "../components/Eight";
+import DocumentStats from "../components/DocStats";
+import DigitalPatina from "./a-pattern-library/digital-patina";
+import PersonalBreadcrumbs from "./a-pattern-library/personal-breadcrumbs";
+import LastReadIndicator from "./a-pattern-library/last-read-indicator";
 import ReferenceLabels from "./a-pattern-library/reference-labels";
+import ArticleDiff from "./a-pattern-library/article-diff";
+import { BeforeAndAfterSlider } from "./a-pattern-library/before-and-after-slider";
+import InteractiveNumbers from "./a-pattern-library/interactive-numbers";
+import { SummariseWidget } from "./a-pattern-library/summarise-widget";
+import CitePullForward from "./a-pattern-library/cite-pull-forward";
 
 import LeftNav from "../components/LeftNav";
 
 const components = {
   DancingAboutArchitecture,
-  BeforeAndAfterSlider,
-  SummariseWidget,
-  Two,
-  Three,
-  Four,
   DocumentStats,
-  Six,
-  Seven,
-  Eight,
+  DigitalPatina,
+  PersonalBreadcrumbs,
+  LastReadIndicator,
   ReferenceLabels,
+  ArticleDiff,
+  BeforeAndAfterSlider,
+  InteractiveNumbers,
+  SummariseWidget,
+  CitePullForward,
 };
 
 export default function ThesisPage({ source }) {
