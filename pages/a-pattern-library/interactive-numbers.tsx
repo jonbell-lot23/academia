@@ -42,7 +42,7 @@ const InteractiveGraphCompoundInterest: React.FC<
           <input
             type="number"
             value={income}
-            onChange={(e) => setIncome(e.target.value)}
+            onChange={(e) => setIncome(parseInt(e.target.value))}
             style={{ width: "100px", marginLeft: "10px", marginRight: "10px" }}
           />
           per year and pays about {taxPaid.toFixed(2)} in taxes. This means
