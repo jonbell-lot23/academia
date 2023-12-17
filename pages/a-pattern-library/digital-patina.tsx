@@ -48,8 +48,9 @@ const DigitalPatina: React.FC<DigitalPatinaProps> = ({
           BBC did a thing where visited links got darker rather than being
           binary. This is a big deal, and made a big impression on me.
         </p>
-        <button onClick={resetColors}>Reset Colors</button>
-        <div style={{ display: "flex", flexDirection: "row" }}>
+        <div
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
+        >
           {Object.keys(colors).map((label) => (
             <ShadeBox
               key={label}
@@ -57,8 +58,19 @@ const DigitalPatina: React.FC<DigitalPatinaProps> = ({
               color={colors[label]}
               darkestColor="#999999"
               updateColor={updateColor}
+              style={{
+                backgroundColor: "#f0f0f0",
+                borderRadius: "5px",
+                margin: "5px",
+              }}
             />
           ))}
+        </div>
+
+        <div className="flex flex-col items-start p-1 space-y-4">
+          <button className="px-4 py-2 border rounded" onClick={resetColors}>
+            Reset Colors
+          </button>
         </div>
       </div>
     </div>

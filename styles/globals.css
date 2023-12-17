@@ -49,9 +49,10 @@ a {
   }
 
   .embeddedContent {
-    background-color: #efefef;
+    border: 2px solid rgb(59 130 246);
+
     padding: 2rem;
-    border-radius: 20px;
+    border-radius: 8px;
   }
 
   .left-nav-container {

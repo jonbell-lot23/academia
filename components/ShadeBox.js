@@ -33,6 +33,7 @@ const ShadeBox = ({ label, color, darkestColor, updateColor }) => {
       style={{
         backgroundColor: color,
         padding: "10px",
+        borderRadius: "5px",
         margin: "5px",
         cursor: "pointer",
         userSelect: "none",

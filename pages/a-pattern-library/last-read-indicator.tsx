@@ -78,7 +78,20 @@ const LastReadIndicator: React.FC<LastReadIndicatorProps> = ({
     const lastReadSection = document.getElementById(lastSection);
     if (lastReadSection) {
       lastReadSection.scrollIntoView();
+      // Add a div with red text indicating the last read point
+      const lastReadPointDiv = document.createElement("div");
+      lastReadPointDiv.style.color = "red";
+      lastReadPointDiv.textContent = "LAST READ POINT";
+      lastReadSection.insertBefore(
+        lastReadPointDiv,
+        lastReadSection.firstChild
+      );
     }
+  };
+
+  const clearCookies = () => {
+    localStorage.removeItem("lastSection");
+    setLastSection("section-0");
   };
 
   return (
@@ -91,12 +104,30 @@ const LastReadIndicator: React.FC<LastReadIndicatorProps> = ({
           format === "standalone" ? "px-4 mt-16" : ""
         }`}
       >
-        <button
-          onClick={scrollToLastReadPosition}
-          className="px-2 mt-6 text-white bg-blue-600 rounded-sm hover:bg-blue-500"
-        >
-          Jump to ({lastSection})
-        </button>
+        <h2 className="my-0">Last Read Indicator</h2>
+        {lastSection !== "section-0" && (
+          <div
+            style={{
+              backgroundColor: "#E0F7FA",
+              borderRadius: "8px",
+              padding: "10px",
+            }}
+          >
+            You've been here before!
+            <a
+              onClick={scrollToLastReadPosition}
+              className="px-2 mt-6 text-blue-600 cursor-pointer hover:text-blue-500"
+            >
+              Jump ahead
+            </a>
+            <a
+              onClick={clearCookies}
+              className="px-2 mt-6 text-blue-600 cursor-pointer hover:text-blue-500"
+            >
+              Clear cookies
+            </a>
+          </div>
+        )}
         <div id="maincontent">
           <p>
             January 24, 1984 - the big day had finally arrived. We had looked
@@ -315,8 +346,7 @@ const LastReadIndicator: React.FC<LastReadIndicatorProps> = ({
             The first, closest dealer didn&#39;t have any units in stock, and
             said that they weren&#39;t for sale yet, but we didn&#39;t give up,
             and the next dealer was willing to sell me one, even though he
-            didn&#39;t have any units in yet either.{" "}
-            <a href="https://google.com">Link to Google</a>
+            didn&#39;t have any units in yet either.
           </p>
         </div>
       </div>
