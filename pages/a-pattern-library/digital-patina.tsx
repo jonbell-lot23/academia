@@ -58,11 +58,6 @@ const DigitalPatina: React.FC<DigitalPatinaProps> = ({
               color={colors[label]}
               darkestColor="#999999"
               updateColor={updateColor}
-              style={{
-                backgroundColor: "#f0f0f0",
-                borderRadius: "5px",
-                margin: "5px",
-              }}
             />
           ))}
         </div>
