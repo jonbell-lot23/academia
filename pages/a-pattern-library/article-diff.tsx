@@ -36,7 +36,7 @@ const ArticleDiff: React.FC<ArticleDiffProps> = ({ format = "standalone" }) => {
           a content's changes over time.
         </p>
 
-        <Diff />
+        <Diff format={format} />
       </div>
     </div>
   );

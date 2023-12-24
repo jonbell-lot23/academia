@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { diffLines } from "diff";
 
-const Diff: React.FC = () => {
+interface DiffProps {
+  format?: "embed" | "standalone";
+}
+
+const Diff: React.FC<DiffProps> = ({ format = "embed" }) => {
   const [diffResult, setDiffResult] = useState([]);
 
   useEffect(() => {
@@ -32,9 +36,13 @@ const Diff: React.FC = () => {
     fetchFilesAndCompare();
   }, []);
 
+  const displayDiffResult =
+    format === "embed" ? diffResult.slice(0, 10) : diffResult;
+
   return (
     <div className="container px-4 mx-auto mt-16">
-      {diffResult.map((part, index) => (
+      <p>Format: {format}</p>
+      {displayDiffResult.map((part, index) => (
         <span
           key={index}
           className={
