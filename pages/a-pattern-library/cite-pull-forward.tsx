@@ -63,7 +63,79 @@ const CitePullForward: React.FC<CitePullForwardProps> = ({
           format === "standalone" ? "px-4 mt-16" : ""
         } mx-auto prose`}
       >
-        <h2>Cite Pull-forward</h2>
+        <h2>Cite Pull-Forward</h2>
+
+        <h3>Description</h3>
+        <p>
+          "Cite Pull-Forward enhances academic and research reading by
+          displaying citation information directly in the text, providing
+          immediate source context without disrupting the reading flow."
+        </p>
+
+        <h3>Principles of concise enhancement and seamless blend</h3>
+        <p>
+          Cite Pull-Forward exemplifies concise enhancement by making citation
+          details readily accessible within the document. It addresses the
+          common challenge of understanding and verifying sources in academic
+          and research texts. By integrating citation information in an
+          unobtrusive, interactive manner, this tool enriches the reading
+          experience with valuable context. It adheres to the seamless blend
+          principle, as it does not distract from the main content but rather
+          complements it. The feature provides an efficient way for readers to
+          check sources and understand the context of information, improving
+          transparency and trust in the content.
+        </p>
+
+        <h3>Where it works well</h3>
+        <p>
+          Cite Pull-Forward is particularly effective in: 1. Academic journals
+          and research papers, where verifying sources is critical. 2. Online
+          educational materials and textbooks. 3. News articles and blogs that
+          reference multiple sources. 4. Any digital content where citations are
+          used extensively. In these contexts, it aids in quickly providing
+          source information, enhancing the credibility and depth of the
+          content.
+        </p>
+
+        <h3>Where it doesn't work well</h3>
+        <p>
+          In casual or informal texts where citations are not commonly used, or
+          in literary works where the narrative flow is paramount, the Cite
+          Pull-Forward feature may not add significant value and could
+          potentially disrupt the reading experience.
+        </p>
+
+        <h3>Why it's better than traditional paper</h3>
+        <p>
+          Traditional paper formats do not offer the dynamic capability to
+          instantly reveal citation information. Cite Pull-Forward in digital
+          formats provides an immediate, in-text source reference, enhancing the
+          reader's understanding and trust in the information, which is not
+          feasible in paper-based texts.
+        </p>
+
+        <h3>Why it's better than multimedia</h3>
+        <p>
+          Unlike separate multimedia elements that can be disruptive, Cite
+          Pull-Forward is a subtle, integrated tool within the text. It provides
+          immediate citation information without requiring the reader to
+          navigate away from the page or engage with an external application.
+        </p>
+
+        <h3>Authoring considerations</h3>
+        <p>
+          When implementing Cite Pull-Forward, it's important to ensure the
+          feature is intuitive and does not clutter the text. The citation
+          information should be easily accessible but not intrusive. Designers
+          should also consider how to handle a large number of citations in a
+          way that maintains readability and accessibility.
+        </p>
+
+        <h3>Other examples</h3>
+        <p>[To be added later]</p>
+
+        <h3>Example</h3>
+
         <div>
           The transition from traditional books to digital platforms represents
           a leap in how we access and interact with information. Whereas

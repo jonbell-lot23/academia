@@ -129,6 +129,83 @@ const LastReadIndicator: React.FC<LastReadIndicatorProps> = ({
           </div>
         )}
         <div id="maincontent">
+          <h3>Description</h3>
+          <p>
+            "Last read indicator seamlessly bookmarks your reading progress,
+            offering an effortless return to your last stopping point in digital
+            texts."
+          </p>
+
+          <h3>Principles of concise enhancement and seamless blend</h3>
+          <p>
+            The 'last read' indicator is a quintessential example of concise
+            enhancement in digital reading. It addresses a common challenge in
+            consuming long-form content - losing one's place - without adding
+            unnecessary complexity or distraction. By providing a simple, visual
+            cue that marks where the user left off, this tool significantly
+            enhances the reading experience. It adds convenience and efficiency,
+            particularly for lengthy articles, e-books, or research papers. In
+            terms of a seamless blend, the last read indicator integrates
+            directly into the document, maintaining the continuity of the
+            reading experience. Unlike external bookmarks or widgets, it doesn't
+            require the reader to leave the text or interact with a separate
+            tool, thus preserving the natural flow of reading.
+          </p>
+
+          <h3>Where it works well</h3>
+          <p>
+            The 'last read' indicator works well in: 1. E-books and digital
+            libraries where readers juggle multiple books. 2. Online courses and
+            educational materials with extensive text content. 3. Research
+            databases and long-form journalistic websites. These platforms
+            benefit from the 'last read' indicator as it helps users easily
+            resume their reading without the need to manually search for where
+            they left off.
+          </p>
+
+          <h3>Where it doesn't work well</h3>
+          <p>
+            Short articles or content that is typically consumed in a single
+            session may not require a 'last read' indicator. For instance, brief
+            news articles or short blog posts are usually read in one go, making
+            the use of such an indicator redundant.
+          </p>
+
+          <h3>Why it's better than traditional paper</h3>
+          <p>
+            Traditional paper lacks the ability to automatically mark the
+            reader's last point of engagement. Readers often use physical
+            bookmarks, which can be lost or misplaced. The 'last read' indicator
+            in digital texts automates this process, offering a more reliable
+            and efficient method to resume reading without any physical
+            accessories.
+          </p>
+
+          <h3>Why it's better than multimedia</h3>
+          <p>
+            Unlike multimedia tools that might require separate applications or
+            disrupt the reading process, the 'last read' indicator is a subtle,
+            integrated feature. It enhances the text without competing for the
+            reader’s attention or requiring additional actions, such as opening
+            a widget or navigating to a different section of the document.
+          </p>
+
+          <h3>Authoring considerations</h3>
+          <p>
+            Designers should ensure that the 'last read' indicator is visually
+            distinct but not distracting. It should be easily identifiable,
+            perhaps through a change in text color or a marker in the margin.
+            Additionally, the functionality should be intuitive, with the marker
+            automatically updating as the reader progresses. Care should be
+            taken to respect user privacy and data security, especially if the
+            reading progress is saved across devices.
+          </p>
+
+          <h3>Other examples</h3>
+          <p>[To be added later]</p>
+
+          <h3>Example</h3>
+
           <p>
             January 24, 1984 - the big day had finally arrived. We had looked
             forward to the date for so long that it didn&#39;t seem real to be

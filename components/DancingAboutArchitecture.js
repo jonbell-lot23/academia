@@ -30,57 +30,62 @@ const One = () => {
       {selectedFormat === "Casual academic format" ? (
         <div>
           <p>
-            Imagine, for a moment, you're standing in the bustling heart of New
-            York City, craning your neck to capture the full majesty of the
-            Empire State Building. Now, picture yourself turning to a passerby
-            and asking for their thoughts on this marvel of engineering and
-            architecture. Instead of words, they launch into an interpretive
-            dance, limbs flailing in a bizarre pastiche of a 1960s hippie caught
-            in a windstorm. It's humorous, perplexing, and—you have to admit—a
-            little bit impressive. But it doesn't tell you much about the
-            building's art deco design, its place in the skyline, or its
-            cultural significance.
+            Imagine if, at the start of this thesis, I needed to present a
+            five-minute video. A century ago, such a notion would have been
+            inconceivable for a scholarly paper. Fast forward to today and
+            putting multimedia into a thesis is still challenging. Because PDFs
+            cannot play video, the state-of-the-art solution is to provide a
+            hyperlink to a YouTube video. This is the modern equivalent of a
+            book referencing a movie and saying "come back once you've seen it."
+            We know most people won't actually watch the movie, because it
+            breaks the flow of reading. This is unacceptable in a scholarly text
+            in 2023 as it would have been in 1953. As a result, we write with
+            the assumption that most people won't chase down our references,
+            whether hyperlinks to multimedia or actual footnotes squirrelled
+            away at the bottom of the document.
+          </p>
+
+          <p>(CITATION NEEDED: EARLY TV WAS JUST CAMERAS AIMED AT RADIO)</p>
+
+          <p>
+            This thesis explores that evolving landscape. It questions why,
+            despite the digital revolution, the experience of reading –
+            especially in academic and scholarly contexts – often remains
+            anchored to conventions developed for paper. It argues that we're at
+            a crossroads, where the potential of digital augmentation can
+            transform the reading experience into something more dynamic and
+            interactive, yet respectful of the deep-rooted traditions of written
+            communication. To achieve this, we'll return to two key principles:
+            *seamless blending* and *concise enhancement*. The future of reading
+            isn't more external links to multimedia content but instead an
+            approach to communication that uses as little technology as possible
+            to enhance the reading experience, with no need for external
+            content.
           </p>
 
           <p>
-            This surreal scenario illustrates a fundamental mismatch between the
-            question asked and the form of communication chosen to answer it.
-            We've all heard the saying, "Writing about music is like dancing
-            about architecture." It's a humorous remark on the absurdity of
-            trying to convey the essence of one art form through the wholly
-            different medium of another. Using the wrong tool for the job can
-            lead to a communication breakdown that, while potentially
-            entertaining, is ultimately uninformative.
-          </p>
-          <p>
-            In the digital age, this concept takes on new weight. With
-            multimedia, hypertext, and now augmented text at our fingertips,
-            we're tasked with choosing the most effective way to communicate our
-            messages. Should we explain a complex JavaScript function through
-            prose, or would an interactive code block serve better? Can the
-            experience of a live concert be captured in a tweet, or does it
-            demand the richness of a VR simulation? The tools we choose can
-            either enhance our message or muddle it, and finding that sweet spot
-            is both the challenge and the thrill of modern communication. Let's
-            try an experiment.
+            Augmented text, as the name makes clear, isn't about replacing the
+            written word with whizzy technologies and media types that distract
+            us from long form reading. It's about enriching the standard reading
+            experience, acknowledging that in a world where technology has
+            changed nearly every aspect of our lives, the humble act of reading
+            deserves its own renaissance.
           </p>
 
           <p>
-            Click one of the following links to rephrase this section in
-            different ways
+            As an experiment, try clicking the "explain like I'm five" link
+            below.
           </p>
         </div>
       ) : (
         <div>
           <p>
-            Imagine you're looking up at a really, really tall building and you
-            want to know more about it. You ask someone, and instead of telling
-            you, they start dancing like they're at a fun, silly party. It's
-            funny, but it doesn't really help you learn about the building, does
-            it? A better way to explain the building would be to use words. Or
-            the best way to explain a song would be to sing it. Or the best way
-            to describe a person might be to show a picture. That's what this
-            paper will be talking about!"
+            "Can you watch YouTube inside a book? No, and even if we could, it
+            would be pretty strange because watching a video is different from
+            reading a book. Reading is its own thing, but we can still make it
+            better. We can find ways to make reading more fun and interesting by
+            adding helpful magical bits into it. This will help people to learn
+            in new ways and have more fun when they read.
           </p>
         </div>
       )}
