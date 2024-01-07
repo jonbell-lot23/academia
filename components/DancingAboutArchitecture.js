@@ -45,8 +45,6 @@ const One = () => {
             away at the bottom of the document.
           </p>
 
-          <p>(CITATION NEEDED: EARLY TV WAS JUST CAMERAS AIMED AT RADIO)</p>
-
           <p>
             This thesis explores that evolving landscape. It questions why,
             despite the digital revolution, the experience of reading –
