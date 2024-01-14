@@ -54,11 +54,11 @@ const One = () => {
             transform the reading experience into something more dynamic and
             interactive, yet respectful of the deep-rooted traditions of written
             communication. To achieve this, we'll return to two key principles:
-            *seamless blending* and *concise enhancement*. The future of reading
-            isn't more external links to multimedia content but instead an
-            approach to communication that uses as little technology as possible
-            to enhance the reading experience, with no need for external
-            content.
+            <b>seamless blending</b> and <b>concise enhancement</b>. The future
+            of reading isn't more external links to multimedia content but
+            instead an approach to communication that uses as little technology
+            as possible to enhance the reading experience, with no need for
+            external content.
           </p>
 
           <p>
