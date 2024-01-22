@@ -30,19 +30,27 @@ const One = () => {
       {selectedFormat === "Casual academic format" ? (
         <div>
           <p>
-            Imagine if, at the start of this thesis, I needed to present a
-            five-minute video. A century ago, such a notion would have been
-            inconceivable for a scholarly paper. Fast forward to today and
-            putting multimedia into a thesis is still challenging. Because PDFs
-            cannot play video, the state-of-the-art solution is to provide a
-            hyperlink to a YouTube video. This is the modern equivalent of a
-            book referencing a movie and saying "come back once you've seen it."
-            We know most people won't actually watch the movie, because it
-            breaks the flow of reading. This is unacceptable in a scholarly text
-            in 2023 as it would have been in 1953. As a result, we write with
-            the assumption that most people won't chase down our references,
-            whether hyperlinks to multimedia or actual footnotes squirrelled
-            away at the bottom of the document.
+            What if this thesis would only make sense if you first watched a
+            five minute video? How might I author it to make the most sense to
+            you as a reader, perhaps consuming the media by reading a printed
+            out PDF over tea, with no access to the internet or a video player?
+            What would I do? What options would I have? One hundred years ago,
+            or even twenty, the answer was clear: your research should not rely
+            on anything that the printed page could not support. Text would
+            work, diagrams and images could, in some context, and everything
+            else would be banished to a footnote, where almost no one would read
+            it.
+          </p>
+          <p>
+            Things are hardly better today. It's still considered a novelty and
+            a nuisance to include any sort of multimedia when explaining
+            concepts in academia. Not because other formats have nothing to
+            offer, but because it's too hard. As a result, we write with the
+            assumption that most people won't chase down our references, whether
+            hyperlinks to multimedia or actual footnotes squirrelled away at the
+            bottom of the document. This is untenable. Interactive
+            visualisations, videos, and improved ways of consuming text all have
+            a role to play, and will in the future.
           </p>
 
           <p>
@@ -50,29 +58,27 @@ const One = () => {
             despite the digital revolution, the experience of reading –
             especially in academic and scholarly contexts – often remains
             anchored to conventions developed for paper. It argues that we're at
-            a crossroads, where the potential of digital augmentation can
-            transform the reading experience into something more dynamic and
-            interactive, yet respectful of the deep-rooted traditions of written
-            communication. To achieve this, we'll return to two key principles:
+            an inspiring moment in humn history, where the potential of digital
+            augmentation can transform the reading experience into something
+            more dynamic, interactive, and effective, while still respectful of
+            the deep-rooted traditions of written research and communication.
+            Throughout this paper, we'll return to two key principles:
             <b>seamless blending</b> and <b>concise enhancement</b>. The future
             of reading isn't more external links to multimedia content but
             instead an approach to communication that uses as little technology
             as possible to enhance the reading experience, with no need for
-            external content.
+            external content. The future of the reading experience will be
+            seamless, consice, and far better than what we experience today.
           </p>
 
           <p>
             Augmented text, as the name makes clear, isn't about replacing the
             written word with whizzy technologies and media types that distract
-            us from long form reading. It's about enriching the standard reading
+            us from long-form reading. It's about enriching the standard reading
             experience, acknowledging that in a world where technology has
             changed nearly every aspect of our lives, the humble act of reading
-            deserves its own renaissance.
-          </p>
-
-          <p>
-            As an experiment, try clicking the "explain like I'm five" link
-            below.
+            deserves its own renaissance. Now, as an experiment, try clicking
+            the "explain like I'm five" link below to watch this text change.
           </p>
         </div>
       ) : (
@@ -83,7 +89,8 @@ const One = () => {
             reading a book. Reading is its own thing, but we can still make it
             better. We can find ways to make reading more fun and interesting by
             adding helpful magical bits into it. This will help people to learn
-            in new ways and have more fun when they read.
+            in new ways and have more fun when they read. They'll also learn
+            better, which is a good goal. That's what this paper is about!
           </p>
         </div>
       )}
