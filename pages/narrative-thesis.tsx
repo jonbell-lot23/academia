@@ -33,13 +33,13 @@ export default function ThesisPage({ source }) {
     <div className="mainContent">
       <LeftNav />
       <div className="container px-4 mx-auto mt-16 prose">
-        <p>Hello</p>
+        This is where my narrative thesis will go.
       </div>
     </div>
   );
 }
 
-// <MDXRemote {...source} components={components} />
+// <MDXRemote {...source} components={components} suppressHydrationWarning />
 
 export async function getServerSideProps(context) {
   // Determine the base URL
@@ -48,7 +48,7 @@ export async function getServerSideProps(context) {
   const baseUrl = `${protocol}://${host}`;
 
   // Add a query parameter for format, which could be 'narrative' or 'researchpaper'
-  const format = "researchpaper"; // Determine this based on user choice or some logic
+  const format = "narrative"; // Determine this based on user choice or some logic
 
   const res = await fetch(`${baseUrl}/api/fetchVersion?format=${format}`);
   const data = await res.json();

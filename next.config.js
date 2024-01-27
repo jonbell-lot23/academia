@@ -15,4 +15,7 @@ module.exports = withMDX({
     }
     return config;
   },
+  experimental: {
+    largePageDataBytes: 256 * 1024, // 256k
+  },
 });
