@@ -33,13 +33,13 @@ export default function ThesisPage({ source }) {
     <div className="mainContent">
       <LeftNav />
       <div className="container px-4 mx-auto mt-16 prose">
-        <p>Hello</p>
+        <MDXRemote {...source} components={components} />
       </div>
     </div>
   );
 }
 
-// <MDXRemote {...source} components={components} />
+//
 
 export async function getServerSideProps(context) {
   // Determine the base URL

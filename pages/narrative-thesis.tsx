@@ -33,13 +33,15 @@ export default function ThesisPage({ source }) {
     <div className="mainContent">
       <LeftNav />
       <div className="container px-4 mx-auto mt-16 prose">
-        This is where my narrative thesis will go.
+        <MDXRemote
+          {...source}
+          components={components}
+          suppressHydrationWarning
+        />
       </div>
     </div>
   );
 }
-
-// <MDXRemote {...source} components={components} suppressHydrationWarning />
 
 export async function getServerSideProps(context) {
   // Determine the base URL
