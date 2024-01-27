@@ -26,19 +26,19 @@ const One = () => {
         transition: "background-color 0.5s",
       }}
     >
-      <h2 ref={headerRef}>Dancing About Architecture</h2>
+      <h4 ref={headerRef}>Dancing About Architecture</h4>
       {selectedFormat === "Casual academic format" ? (
         <div>
           <p>
-            What if this thesis only made sense if you first watched a five
-            minute video? How might I author it to make the most sense to you as
-            a reader with no access to the internet or ability to play video?
-            What would I do? One hundred years ago, or even ten, the answer was
-            clear: research should not rely on anything that the printed page
-            could not support. Text, diagrams, and images were first class media
-            types, and everything else was banished to a footnote, where almost
-            no one would read it. The words were the main event, and any
-            supporting media was a novel distraction at best.
+            Imagine a research paper that only made sense if read alongside a
+            video. How might a researcher author it to make the most sense to a
+            readers with no access to the internet or ability to play video? One
+            hundred years ago, or even ten, the answer was clear: written
+            research papers should not rely on anything that the printed page
+            cannot natively support. Text, diagrams, and images were first class
+            media types, and everything else was banished to a footnote, where
+            almost no one would read it. The words were the main event, and any
+            supporting media was a quirky distraction at best.
           </p>
           <p>
             Things are hardly better today. It's still considered a novelty and
@@ -68,8 +68,8 @@ const One = () => {
             content but instead an approach to communication that uses as little
             technology as possible to enhance the reading experience, with no
             need for external content. Throughout this paper, we'll return to
-            two key principles to guide us:
-            <b>seamless blending</b> and <b>concise enhancement</b>.
+            two key principles to guide us: <b>seamless blending</b> and{" "}
+            <b>concise enhancement</b>.
           </p>
 
           <p>
