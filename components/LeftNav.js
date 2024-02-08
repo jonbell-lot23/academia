@@ -83,9 +83,11 @@ const LeftNav = () => {
         <h2 className="font-bold">General links</h2>
         <ul className="pb-8">{renderLinks(generalLinks)}</ul>
 
-        <h2 className="font-bold">Examples</h2>
-        <ul>{renderLinks(patternLibraryLinks, "a-pattern-library/")}</ul>
-        <BreadcrumbTracker />
+        <div className="hidden">
+          <h2 className="font-bold">Examples</h2>
+          <ul>{renderLinks(patternLibraryLinks, "a-pattern-library/")}</ul>
+          <BreadcrumbTracker />
+        </div>
       </div>
     </div>
   );
