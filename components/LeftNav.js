@@ -27,6 +27,22 @@ const LeftNav = () => {
     { name: "cite-pull-forward", displayName: " Cite Pull Forward" },
   ];
 
+  const studyLinks = [
+    { name: "#word-lookup", displayName: "Word Lookup" },
+    { name: "#following-references", displayName: "Following References" },
+    { name: "#footnotes", displayName: "Footnotes" },
+    { name: "#image-comparison", displayName: "Image Comparison" },
+    { name: "#bookmarking", displayName: "Bookmarking" },
+    { name: "#reference-tracking", displayName: "Reference Tracking" },
+    { name: "#article-evolution", displayName: "Article Evolution" },
+    {
+      name: "#dynamic-content-interaction",
+      displayName: "Dynamic Content Interaction",
+    },
+    { name: "#navigation-history", displayName: "Navigation History" },
+    { name: "#summarisation-tools", displayName: "Summarisation Tools" },
+  ];
+
   const generalLinks = [
     { name: "about", displayName: "About" },
     { name: "thesis", displayName: "Thesis" },
@@ -83,9 +99,9 @@ const LeftNav = () => {
         <h2 className="font-bold">General links</h2>
         <ul className="pb-8">{renderLinks(generalLinks)}</ul>
 
-        <div className="hidden">
-          <h2 className="font-bold">Examples</h2>
-          <ul>{renderLinks(patternLibraryLinks, "a-pattern-library/")}</ul>
+        <div>
+          <h2 className="font-bold">Comparative studies</h2>
+          <ul>{renderLinks(studyLinks, "/thesis/")}</ul>
           <BreadcrumbTracker />
         </div>
       </div>
