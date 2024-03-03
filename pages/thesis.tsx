@@ -3,14 +3,14 @@ import { MDXRemote } from "next-mdx-remote";
 import DancingAboutArchitecture from "../components/DancingAboutArchitecture";
 import DocumentStats from "../components/DocStats";
 import DigitalPatina from "./a-pattern-library/digital-patina";
-import PersonalBreadcrumbs from "./a-pattern-library/personal-breadcrumbs";
-import LastReadIndicator from "./a-pattern-library/last-read-indicator";
-import ReferenceLabels from "./a-pattern-library/reference-labels";
-import ArticleDiff from "./a-pattern-library/article-diff";
-import { BeforeAndAfterSlider } from "./a-pattern-library/before-and-after-slider";
-import InteractiveNumbers from "./a-pattern-library/interactive-numbers";
-import { SummariseWidget } from "./a-pattern-library/summarise-widget";
-import CitePullForward from "./a-pattern-library/cite-pull-forward";
+import PersonalBreadcrumbs from "./a-pattern-library/tracking-history";
+import LastReadIndicator from "./a-pattern-library/passive-bookmark";
+import ReferenceLabels from "./a-pattern-library/reference-tracking";
+import ArticleDiff from "./a-pattern-library/corrections";
+import { BeforeAndAfterSlider } from "./a-pattern-library/image-compare";
+import InteractiveNumbers from "./a-pattern-library/dynamic-content";
+import { SummariseWidget } from "./a-pattern-library/summarise";
+import CitePullForward from "./a-pattern-library/footnotes";
 
 import LeftNav from "../components/LeftNav";
 

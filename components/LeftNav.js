@@ -28,19 +28,18 @@ const LeftNav = () => {
   ];
 
   const studyLinks = [
-    { name: "#word-lookup", displayName: "Word Lookup" },
-    { name: "#following-references", displayName: "Following References" },
-    { name: "#footnotes", displayName: "Footnotes" },
-    { name: "#image-comparison", displayName: "Image Comparison" },
-    { name: "#bookmarking", displayName: "Bookmarking" },
-    { name: "#reference-tracking", displayName: "Reference Tracking" },
-    { name: "#article-evolution", displayName: "Article Evolution" },
+    { name: "#word-lookup", displayName: "1. Word Lookup" },
+    { name: "#footnotes", displayName: "2. Footnotes" },
+    { name: "#image-comparison", displayName: "3. Image Comparison" },
+    { name: "#bookmarking", displayName: "4. Bookmarking" },
+    { name: "#reference-tracking", displayName: "5. Reference Tracking" },
+    { name: "#article-evolution", displayName: "6. Article Evolution" },
     {
       name: "#dynamic-content-interaction",
-      displayName: "Dynamic Content Interaction",
+      displayName: "7. Dynamic Content",
     },
-    { name: "#navigation-history", displayName: "Navigation History" },
-    { name: "#summarisation-tools", displayName: "Summarisation Tools" },
+    { name: "#navigation-history", displayName: "8.   Tracking history" },
+    { name: "#summarisation-tools", displayName: "9. Summarisation" },
   ];
 
   const generalLinks = [
@@ -99,7 +98,7 @@ const LeftNav = () => {
         <h2 className="font-bold">General links</h2>
         <ul className="pb-8">{renderLinks(generalLinks)}</ul>
 
-        <div>
+        <div className="butt">
           <h2 className="font-bold">Comparative studies</h2>
           <ul>{renderLinks(studyLinks, "/thesis/")}</ul>
           <BreadcrumbTracker />
