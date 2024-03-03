@@ -94,3 +94,75 @@ a {
     top: 12px;
   }
 }
+
+@media print {
+  /* Remove elements that are not needed in print */
+  header,
+  footer,
+  nav,
+  aside,
+  .no-print {
+    display: none;
+  }
+
+  /* Ensure the content spans the full width */
+  body,
+  article,
+  section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Adjust the font size and line height for better readability */
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  /* Optimize images for printing */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* Avoid page breaks inside sections for continuity */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  figure {
+    page-break-inside: avoid;
+  }
+
+  /* Display URLs after links */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* Apply custom styles for tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  /* Adjust colors for better print quality */
+  body {
+    color: #000;
+    background: #fff;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+    color: #000;
+  }
+}
