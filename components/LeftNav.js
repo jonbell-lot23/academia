@@ -49,19 +49,23 @@ const LeftNav = () => {
     { name: "/thesis/#context", displayName: "Context is king" },
     {
       name: "/thesis/#difficult",
-      displayName: "Creating and socialising new ideas is extremely difficult",
+      displayName: "Difficulties",
     },
     {
       name: "/thesis/#better-metrics",
-      displayName: "We need better metrics to rate ROI",
+      displayName: "We need better metrics",
     },
     {
       name: "/thesis/#new-doors",
-      displayName: "Augmented text opens new doors",
+      displayName: "Opening new doors",
+    },
+    {
+      name: "/thesis/#limitations",
+      displayName: "Limitations",
     },
     {
       name: "/thesis/#possibilities",
-      displayName: "The possibilities are vast and contextual",
+      displayName: "Possibilities",
     },
   ];
 
@@ -70,7 +74,15 @@ const LeftNav = () => {
   ];
 
   const appendicesLinks = [
-    { name: "/thesis/#raw-data", displayName: "1: Raw data from studies" },
+    {
+      name: "/thesis/#narrative-history",
+      displayName: "1: This thesis in a narrative style",
+    },
+    {
+      name: "/thesis/#inspiration",
+      displayName: "2: Inspiration Gallery",
+    },
+    { name: "/thesis/#raw-data", displayName: "3: Raw data from studies" },
   ];
 
   const referencesLinks = [

@@ -11,6 +11,7 @@ import { BeforeAndAfterSlider } from "./a-pattern-library/image-compare";
 import InteractiveNumbers from "./a-pattern-library/dynamic-content";
 import { SummariseWidget } from "./a-pattern-library/summarise";
 import CitePullForward from "./a-pattern-library/footnotes";
+import DynamicContent from "./a-pattern-library/dynamic-content";
 
 import LeftNav from "../components/LeftNav";
 
@@ -26,6 +27,7 @@ const components = {
   InteractiveNumbers,
   SummariseWidget,
   CitePullForward,
+  DynamicContent,
 };
 
 export default function ThesisPage({ source }) {

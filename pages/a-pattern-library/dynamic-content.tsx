@@ -64,7 +64,7 @@ const InteractiveGraphCompoundInterest: React.FC<
         </ul>
 
         <h3>Other examples</h3>
-        <p>
+        <div>
           <ol>
             <li>
               A fitness goal tracker that adjusts workout plans based on user
@@ -87,7 +87,7 @@ const InteractiveGraphCompoundInterest: React.FC<
               climate and soil type inputs.
             </li>
           </ol>
-        </p>
+        </div>
       </div>
     </div>
   );
