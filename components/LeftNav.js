@@ -8,44 +8,73 @@ const LeftNav = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const patternLibraryLinks = [
-    { name: "about-the-library", displayName: "About" },
-    { name: "digital-patina", displayName: "Digital Patina" },
-    { name: "personal-breadcrumbs", displayName: "Personal Breadcrumbs" },
-    { name: "last-read-indicator", displayName: "Last Read Indicator" },
-    { name: "reference-labels", displayName: "Reference Labels" },
-    { name: "article-diff", displayName: "Article Diff" },
-    {
-      name: "before-and-after-slider",
-      displayName: "Before and After Slider",
-    },
-    {
-      name: "interactive-numbers",
-      displayName: " Interactive numbers",
-    },
-    { name: "summarise-widget", displayName: "Summarise Widget" },
-    { name: "cite-pull-forward", displayName: " Cite Pull Forward" },
-  ];
-
-  const studyLinks = [
-    { name: "#word-lookup", displayName: "1. Word Lookup" },
-    { name: "#footnotes", displayName: "2. Footnotes" },
-    { name: "#image-comparison", displayName: "3. Image Comparison" },
-    { name: "#bookmarking", displayName: "4. Bookmarking" },
-    { name: "#reference-tracking", displayName: "5. Reference Tracking" },
-    { name: "#article-evolution", displayName: "6. Article Evolution" },
-    {
-      name: "#dynamic-content-interaction",
-      displayName: "7. Dynamic Content",
-    },
-    { name: "#navigation-history", displayName: "8.   Tracking history" },
-    { name: "#summarisation-tools", displayName: "9. Summarisation" },
-  ];
-
   const generalLinks = [
     { name: "about", displayName: "About" },
     { name: "thesis", displayName: "Thesis" },
     { name: "proposal", displayName: "Proposal" },
+  ];
+
+  const welcomeLinks = [
+    { name: "/thesis/#abstract", displayName: "Abstract" },
+    { name: "/thesis/#toc", displayName: "Table of Contents" },
+    { name: "/thesis/#introduction", displayName: "Introduction" },
+    { name: "/thesis/#literature-review", displayName: "Literature Review" },
+    { name: "/thesis/#methodology", displayName: "Methodology" },
+  ];
+
+  const studyLinks = [
+    { name: "/thesis/#findings", displayName: "Summary of findings" },
+    { name: "/thesis/#word-lookup", displayName: "1. Word Lookup" },
+    { name: "/thesis/#footnotes", displayName: "2. Footnotes" },
+    { name: "/thesis/#image-comparison", displayName: "3. Image Comparison" },
+    { name: "/thesis/#bookmarking", displayName: "4. Bookmarking" },
+    {
+      name: "/thesis/#reference-tracking",
+      displayName: "5. Reference Tracking",
+    },
+    { name: "/thesis/#article-evolution", displayName: "6. Article Evolution" },
+    {
+      name: "/thesis/#dynamic-content-interaction",
+      displayName: "7. Dynamic Content",
+    },
+    {
+      name: "/thesis/#tracking-history",
+      displayName: "8.   Tracking history",
+    },
+    { name: "/thesis/#summarisation-tools", displayName: "9. Summarisation" },
+  ];
+
+  const discussionLinks = [
+    { name: "/thesis/#credit", displayName: "Credit where credit is due" },
+    { name: "/thesis/#context", displayName: "Context is king" },
+    {
+      name: "/thesis/#difficult",
+      displayName: "Creating and socialising new ideas is extremely difficult",
+    },
+    {
+      name: "/thesis/#better-metrics",
+      displayName: "We need better metrics to rate ROI",
+    },
+    {
+      name: "/thesis/#new-doors",
+      displayName: "Augmented text opens new doors",
+    },
+    {
+      name: "/thesis/#possibilities",
+      displayName: "The possibilities are vast and contextual",
+    },
+  ];
+
+  const conclusionLinks = [
+    { name: "/thesis/#further", displayName: "Further research" },
+  ];
+
+  const appendicesLinks = [
+    { name: "/thesis/#raw-data", displayName: "1: Raw data from studies" },
+  ];
+
+  const referencesLinks = [
+    { name: "/thesis/#references", displayName: "References" },
   ];
 
   const renderLinks = (links, basePath = "") =>
@@ -91,18 +120,30 @@ const LeftNav = () => {
       </button>
 
       <div
+        id="butt"
         className={`left-nav-container left-nav ${
           isMenuOpen ? "open" : "closed"
         }`}
       >
-        <h2 className="font-bold">General links</h2>
-        <ul className="pb-8">{renderLinks(generalLinks)}</ul>
+        <h2 className="font-bold">Augmented Text</h2>
+        <ul className="pb-8">{renderLinks(welcomeLinks)}</ul>
 
-        <div className="butt">
-          <h2 className="font-bold">Comparative studies</h2>
-          <ul>{renderLinks(studyLinks, "/thesis/")}</ul>
-          <BreadcrumbTracker />
-        </div>
+        <h2 className="font-bold">Findings</h2>
+        <ul className="pb-8">{renderLinks(studyLinks)}</ul>
+
+        <h2 className="font-bold">Discussion</h2>
+        <ul className="pb-8">{renderLinks(discussionLinks)}</ul>
+
+        <h2 className="font-bold">Conclusion</h2>
+        <ul className="pb-8">{renderLinks(conclusionLinks)}</ul>
+
+        <h2 className="font-bold">Appedices</h2>
+        <ul className="pb-8">{renderLinks(appendicesLinks)}</ul>
+
+        <h2 className="font-bold">References</h2>
+        <ul className="pb-8">{renderLinks(referencesLinks)}</ul>
+
+        <BreadcrumbTracker />
       </div>
     </div>
   );

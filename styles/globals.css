@@ -63,6 +63,7 @@ a {
     background-color: #f9f9f9;
     padding: 20px;
     display: block;
+    overflow-y: auto;
   }
 
   li {
@@ -70,8 +71,13 @@ a {
     border-radius: 4px;
   }
 
-  li:hover {
-    background-color: rgb(158, 190, 243);
+  #butt a {
+    width: 100%;
+    display: block;
+  }
+
+  #butt li:hover {
+    background-color: #007bff5d;
     color: #fff;
   }
 }
