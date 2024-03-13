@@ -16,7 +16,6 @@ const LeftNav = () => {
 
   const welcomeLinks = [
     { name: "/thesis/#abstract", displayName: "Abstract" },
-    { name: "/thesis/#toc", displayName: "Table of Contents" },
     { name: "/thesis/#introduction", displayName: "Introduction" },
     { name: "/thesis/#literature-review", displayName: "Literature Review" },
     { name: "/thesis/#methodology", displayName: "Methodology" },
