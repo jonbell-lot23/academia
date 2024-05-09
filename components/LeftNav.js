@@ -9,12 +9,14 @@ const LeftNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const generalLinks = [
-    { name: "about", displayName: "About" },
-    { name: "thesis", displayName: "Thesis" },
-    { name: "proposal", displayName: "Proposal" },
+    { name: "about", displayName: "👉 About this thesis" },
+    /* { name: "thesis", displayName: "Thesis" },
+    { name: "proposal", displayName: "Proposal" }, */
   ];
 
   const welcomeLinks = [
+    { name: "about", displayName: "About" },
+    { name: "todo", displayName: "Todo list" },
     { name: "/thesis/#abstract", displayName: "Abstract" },
     { name: "/thesis/#introduction", displayName: "Introduction" },
     { name: "/thesis/#literature-review", displayName: "Literature Review" },
@@ -136,6 +138,8 @@ const LeftNav = () => {
           isMenuOpen ? "open" : "closed"
         }`}
       >
+        <ul className="hidden pb-8">{renderLinks(generalLinks)}</ul>
+
         <h2 className="font-bold">Augmented Text</h2>
         <ul className="pb-8">{renderLinks(welcomeLinks)}</ul>
 
