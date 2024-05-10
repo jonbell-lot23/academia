@@ -27,7 +27,7 @@ const Todo = () => {
       feedback:
         "Literature review too short, currently only one real usecase/argument",
       notes:
-        "How did that happen?! I didn't even notice, but yeah. That's weird. Will add things back here.",
+        "How did that happen?! I didn't even notice, but yeah. That's weird. Will add things back here. Update: I see what happened. I referred to Wolf and Chomsky in my introduction, then said that Explorable Explanations was the only real example I could find that directly addressed what I'm going for. That was by design, but I do have some ideas I can pull in here to make the literature review more robust. Stay tuned.",
     },
     {
       name: "Integrate Literature Review into Methodology",
@@ -73,9 +73,9 @@ const Todo = () => {
           <div
             key={index}
             style={{
-              borderTop: "1px solid #000",
-              marginTop: "10px",
-              marginBottom: "10px",
+              borderTop: "1px solid #efefef",
+              marginTop: "20px",
+              marginBottom: "20px",
             }}
           >
             <p>
