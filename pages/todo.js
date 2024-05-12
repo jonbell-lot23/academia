@@ -13,12 +13,12 @@ const Todo = () => {
     },
     {
       name: "Hyperlink References",
-      status: "Todo",
+      status: "[On hold]",
 
       feedback:
         "maybe you could hyperlink references? (you do this already in one or two places)",
       notes:
-        "Good call, will keep my eyes peeled and get this more consistent!",
+        "I'm moving this into a nice-to-have category. It'd be awesome to get to this once the body of the text is ironed out, but for now it's lower priority. On hold.",
     },
     {
       name: "Expand the Literature Review",
@@ -27,15 +27,14 @@ const Todo = () => {
       feedback:
         "Literature review too short, currently only one real usecase/argument",
       notes:
-        "How did that happen?! I didn't even notice, but yeah. That's weird. Will add things back here. Update: I see what happened. I referred to Wolf and Chomsky in my introduction, then said that Explorable Explanations was the only real example I could find that directly addressed what I'm going for. That was by design, but I do have some ideas I can pull in here to make the literature review more robust. Stay tuned.",
+        "I've got some good stuff I can refer to here. I'll be pulling in the methodology stuff as recommended (Nielson, GOMs, etc) but also some of the examples I had tucked into the appendix. I know how I can flesh this out more.",
     },
     {
       name: "Integrate Literature Review into Methodology",
-      status: "Todo",
-
+      status: "✅",
       feedback:
         "methodology is excellent, but plz dont forget to add litreview (as a method)",
-      notes: "Roger roger",
+      notes: "Added and smoothed that transition",
     },
     {
       name: "Enhance Methodology with Study Findings",
@@ -43,7 +42,7 @@ const Todo = () => {
 
       feedback:
         "methods used in study findings can form basis for additions to litreview",
-      notes: "Got it",
+      notes: "Will be moving this stuff forward to address this",
     },
     {
       name: "Reference Integration in Discussion",

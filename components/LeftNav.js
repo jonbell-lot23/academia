@@ -76,14 +76,10 @@ const LeftNav = () => {
 
   const appendicesLinks = [
     {
-      name: "/thesis/#narrative-history",
-      displayName: "1: This thesis in a narrative style",
-    },
-    {
       name: "/thesis/#inspiration",
-      displayName: "2: Inspiration Gallery",
+      displayName: "1: Inspiration Gallery",
     },
-    { name: "/thesis/#raw-data", displayName: "3: Raw data from studies" },
+    { name: "/thesis/#raw-data", displayName: "2: Raw data from studies" },
   ];
 
   const referencesLinks = [
