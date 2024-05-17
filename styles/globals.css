@@ -32,6 +32,13 @@ a {
   font-size: 18px;
 }
 
+#todo {
+  border: 1px solid #b3d1ff;
+  background-color: #f0f8ff;
+  padding: 0 1rem;
+  border-radius: 8px;
+}
+
 .left-nav.closed {
   display: none;
 }
