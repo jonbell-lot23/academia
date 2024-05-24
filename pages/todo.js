@@ -19,16 +19,8 @@ const Todo = () => {
         >
           <h2>Introduction</h2>
           <ul>
-            <li>Explain essence really well</li>
-            <li>
-              Figure out how to talk about the intermediaries, and explain why
-              I’m doing that
-            </li>
             <li>Tie The Web’s Grain back to my research question somehow</li>
             <li>Amp up personalisation</li>
-            <li>
-              Introduction needs a transition before getting to the lit review
-            </li>
           </ul>
 
           <h2>Literature review</h2>
