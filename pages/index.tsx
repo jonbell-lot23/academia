@@ -5,7 +5,7 @@ const Index: React.FC = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.push("/about");
+    router.push("/thesis");
   }, [router]);
 
   return null;

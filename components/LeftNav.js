@@ -15,8 +15,6 @@ const LeftNav = () => {
   ];
 
   const welcomeLinks = [
-    { name: "about", displayName: "About" },
-    { name: "todo", displayName: "Todo list" },
     { name: "/thesis/#abstract", displayName: "Abstract" },
     { name: "/thesis/#introduction", displayName: "Introduction" },
     { name: "/thesis/#literature-review", displayName: "Literature Review" },
@@ -143,7 +141,7 @@ const LeftNav = () => {
         <ul className="pb-8">{renderLinks(studyLinks)}</ul>
 
         <h2 className="font-bold">Discussion</h2>
-        <ul className="pb-8">{renderLinks(discussionLinks)}</ul>
+        <ul className="pb-8">(new links under construction)</ul>
 
         <h2 className="font-bold">Conclusion</h2>
         <ul className="pb-8">{renderLinks(conclusionLinks)}</ul>
