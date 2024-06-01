@@ -74,15 +74,35 @@ export default function HomePage() {
     }
   };
 
+  const resetDemo = () => {
+    localStorage.removeItem("lastSection");
+    setLastSection("section-0");
+    location.reload();
+  };
+
   return (
     <div className="mx-auto prose">
       <button
         onClick={scrollToLastReadPosition}
-        className="fixed left-0 px-2 mx-3 my-6 text-white bg-blue-600 rounded-lg hover:bg-blue-500"
+        className="fixed px-2 mx-6 my-6 text-white bg-blue-600 rounded-lg left-2 hover:bg-blue-500"
       >
         Jump to ({lastSection})
       </button>
       <div id="maincontent">
+        <div className="px-8 py-4 bg-gray-100">
+          <h3>Last read indicator demo</h3>
+          <p>
+            Try scrolling down the page. Try reloading the page and it will jump
+            straight there. This is a demo to demonstrate how this simple code
+            can make a big difference for people reading lengthy text.{" "}
+            <span
+              onClick={resetDemo}
+              style={{ cursor: "pointer", textDecoration: "underline" }}
+            >
+              Reset demo
+            </span>
+          </p>
+        </div>
         <p>
           January 24, 1984 - the big day had finally arrived. We had looked
           forward to the date for so long that it didn&#39;t seem real to be

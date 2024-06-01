@@ -44,27 +44,21 @@ const LeftNav = () => {
   ];
 
   const discussionLinks = [
-    { name: "/thesis/#credit", displayName: "Credit where credit is due" },
-    { name: "/thesis/#context", displayName: "Context is king" },
     {
-      name: "/thesis/#difficult",
-      displayName: "Difficulties",
+      name: "/thesis/#summary-of-findings",
+      displayName: "Summary of findings",
     },
     {
-      name: "/thesis/#better-metrics",
-      displayName: "We need better metrics",
+      name: "/thesis/#augmented-text-is-promising",
+      displayName: "Augmented Text is Promising",
     },
     {
-      name: "/thesis/#new-doors",
-      displayName: "Opening new doors",
+      name: "/thesis/#measurement-and-balance-are-key",
+      displayName: "Measurement and Balance are Key",
     },
     {
-      name: "/thesis/#limitations",
-      displayName: "Limitations",
-    },
-    {
-      name: "/thesis/#possibilities",
-      displayName: "Possibilities",
+      name: "/thesis/#limitations-challenges-out-of-scope",
+      displayName: "Limitations, Challenges and Items Out of Scope",
     },
   ];
 
@@ -141,7 +135,7 @@ const LeftNav = () => {
         <ul className="pb-8">{renderLinks(studyLinks)}</ul>
 
         <h2 className="font-bold">Discussion</h2>
-        <ul className="pb-8">(new links under construction)</ul>
+        <ul className="pb-8">{renderLinks(discussionLinks)}</ul>
 
         <h2 className="font-bold">Conclusion</h2>
         <ul className="pb-8">{renderLinks(conclusionLinks)}</ul>
