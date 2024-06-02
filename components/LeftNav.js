@@ -140,9 +140,6 @@ const LeftNav = () => {
         <h2 className="font-bold">Conclusion</h2>
         <ul className="pb-8">{renderLinks(conclusionLinks)}</ul>
 
-        <h2 className="font-bold">Appedices</h2>
-        <ul className="pb-8">{renderLinks(appendicesLinks)}</ul>
-
         <h2 className="font-bold">References</h2>
         <ul className="pb-8">{renderLinks(referencesLinks)}</ul>
 
