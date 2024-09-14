@@ -121,7 +121,8 @@ a {
   footer,
   nav,
   aside,
-  .no-print {
+  .no-print,
+  #butt {
     display: none;
   }
 
@@ -184,5 +185,9 @@ a {
   a:visited {
     text-decoration: underline;
     color: #000;
+  }
+
+  .mainContent {
+    margin-left: 0;
   }
 }

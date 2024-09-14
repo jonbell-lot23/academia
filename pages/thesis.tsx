@@ -34,14 +34,18 @@ export default function ThesisPage({ source }) {
   return (
     <div className="mainContent">
       <LeftNav />
-      <div className="container px-4 mx-auto mt-16 prose">
+      <div className="hidden print:block border border-gray-500 bg-gray-50 p-4 mx-auto prose">
+        <h2>Note:</h2>
+        <p>
+          This thesis is hosted at augmented-text.com and contains important interactive elements. This is a PDF printout of the website.
+        </p>
+      </div>
+      <div className="container mx-auto mt-16 prose print:px-0">
         <MDXRemote {...source} components={components} />
       </div>
     </div>
   );
 }
-
-//
 
 export async function getServerSideProps(context) {
   // Determine the base URL
