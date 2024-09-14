@@ -23,18 +23,18 @@ export const BeforeAndAfterSlider: React.FC<BeforeAndAfterSliderProps> = ({
           format === "standalone" ? "px-4 mt-16" : ""
         } mx-auto prose`}
       >
-        <div className="mx-auto prose">
+        <div className="mx-auto">
           <ReactCompareSlider
             itemOne={
               <ReactCompareSliderImage
-                src="https://static3.stuff.co.nz/1-15-akl-wynyard5-b-b4191c11.jpg"
-                alt="Image one"
+                src="media/city-before.png"
+                alt="Black and white"
               />
             }
             itemTwo={
               <ReactCompareSliderImage
-                src="https://static3.stuff.co.nz/1-15-akl-wynyard5-a-ac05f930.jpg"
-                alt="Image two"
+                src="media/city-after.png"
+                alt="Color"
               />
             }
           />
